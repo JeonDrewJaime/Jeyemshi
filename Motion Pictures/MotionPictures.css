@@ -1,0 +1,340 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+}
+body{
+    background-color: rgb(28, 4, 23);
+    display:grid;
+    justify-content:center;
+}
+
+video{
+    object-fit: contain;
+    max-width:100%;
+    max-height:100%;
+}  
+#part1{
+  background-color: black;
+  width:1900px;
+  height:800px;
+  transition:0.5s;
+  
+}
+
+.line{
+    padding:0px 30px 0px 30px;
+    color: white;
+    font-family: 'Gotham Light', sans-serif;
+    pointer-events:none;
+    font-size: 29px;
+
+}
+#divider1{
+   padding:750px 0px 0px 0px ;
+   width:1900px;
+   position:absolute;
+   top:0;
+}
+
+.floats{
+    padding: 50px 50px 0px 71%;
+    transition: 0.5s;
+    position:fixed;
+    z-index: 4;
+}
+
+
+.withLine{
+    color: white;
+    font-family: 'Gotham Light', sans-serif;
+    text-decoration: none;
+    font-size: 27px;
+    transition: 0.5s;
+}
+
+.withLine:hover{
+    color: rgb(161, 0, 140);
+}
+
+#part2{
+    background-image: url('../Backgrounds/Portfolios_BG.png');
+    background-repeat: no-repeat;
+    width:1900px;
+    height:1000px;
+    transition:0.5s;
+
+}
+
+
+.headers2{
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+    font-size:50px;
+    text-align: center;
+    padding: 180px 0px 30px 50px;
+    letter-spacing: 30px;
+}
+
+#divider2{
+    width:1900px;
+    position:absolute;
+}
+
+#part3{
+    background-image: url('../Backgrounds/Footer.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:1900px;
+    height:1000px;
+    transition:0.5s;
+}
+
+#footer{
+    margin:230px 500px 0px 500px ;
+}
+
+.info{
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+    font-size:27px;
+    margin:20px 0px 25px 220px;
+}
+
+.link{
+    color: white;
+    font-family: 'Gotham Light', sans-serif;
+    font-size:27px;
+    text-decoration: none;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.link:hover{
+    color: #69ffff;
+}
+
+
+.art1, .art2, .art3, .art4, .art5, .art6{
+    position:fixed;
+    justify-self: right;
+    padding: 5% 4% 3% 5%;
+     width:90%;
+     height:80%;
+     object-fit:contain;
+}
+
+iframe{
+    margin:180px 250px 0px 300px;
+    width: 1280px;
+    height: 720px;
+}
+
+/*Desktop response*/
+@media(max-width: 1600px){
+    .floats{
+     padding: 50px 0px 0px 65%;
+    }
+}
+
+@media(max-width: 1300px){
+ .floats{
+  padding: 50px 0px 0px 60%;
+ }
+}
+
+@media(max-width: 1100px){
+ .floats{
+  padding: 50px 50px 0px 50%;
+ }
+}
+
+@media(max-width: 1000px){
+ .floats{
+  padding: 50px 50px 0px 40%;
+ }
+}
+
+@media(max-width: 850px){
+    .floats{
+     padding: 50px 50px 0px 30%;
+    }
+}
+
+
+ /*Tablet response*/
+ @media (max-width: 768px) {
+
+   .headers{
+    font-size: 25px;
+    padding:180px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+
+   .headers2{
+    font-size: 25px;
+    padding:90px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+   
+   #part1{
+    width: 768px;
+    height: 330px;
+    object-fit:contain;
+   }
+
+
+   #part3{
+    width: 768px;
+    height:400px;
+    object-fit:contain;
+   }
+
+   .withLine{
+    font-size: 15px;
+   }
+
+   .line {
+    font-size: 15px;
+    padding:0px 10px 0px 10px;
+   }
+
+   .floats{
+    padding: 30px 0px 0px 70%;
+   }
+   
+   #divider1{
+    width:760px;
+   padding-top: 308px;
+   }
+
+   #divider2{
+    width:768px;
+    margin-top:0px;
+   }
+   
+   iframe{
+    margin:50px 0px 0px 65px;
+    width: 630px;
+    height: 360px;
+   }
+   #part2{
+    width:768px;
+    height:480px;
+    object-fit:contain;
+   }
+  
+   #footer{
+    margin:50px 50px 0px 65px ;
+   }
+
+   .info{
+    font-size:13px;
+    margin:15px 0px 10px 200px;
+   }
+
+   .link{
+    font-size:13px;
+   }
+}
+
+@media(max-width: 720px){
+    .floats{
+     padding: 30px 50px 0px 60%;
+    }
+}
+
+@media(max-width: 660px){
+    .floats{
+     padding: 30px 50px 0px 55%;
+    }
+}
+
+@media(max-width: 620px){
+    .floats{
+     padding: 30px 50px 0px 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Smartphones, Android phones, landscape ihone */
+
+    #part1{
+        width: 500px;
+        height:215px;
+    
+    }
+    iframe{
+        margin:90px 0px 0px 48px;
+        width: 400px;
+        height: 300px;
+    }
+   #part2 {
+    width:500px;
+    height:420px;
+    object-fit: cover;
+   }
+
+   #part3 {
+    background-image: url('../Backgrounds/Footer_mobile.png');
+    width: 500px;
+    height:880px;
+    object-fit: contain;
+   }
+
+   #divider1{
+    width:500px;
+    height:40px;
+    object-fit: cover;
+    margin-top:-110px;
+   }
+
+   #divider2{
+    width:500px;
+    height:50px;
+    object-fit: cover;
+    margin-top:-10px;
+   }
+
+   .floats{
+    padding: 30px 10% 0px 30%;
+   }
+
+   .withLine{
+    font-size: 15px;
+   }
+
+   .line {
+    font-size: 15px;
+    padding:0px 10px 0px 10px;
+   }
+
+   .options{
+    height: 250px;
+    width:  200px;
+   }
+   
+
+   .headers2{
+    font-size: 25px;
+    padding:320px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+
+   .headers{
+    font-size: 25px;
+    padding:750px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+
+   .info{
+    margin:15px 0px 10px 66px;
+   }
+
+   #footer{
+    margin:60px 50px 0px 65px ;
+   }
+ }
