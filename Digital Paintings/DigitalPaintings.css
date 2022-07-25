@@ -371,7 +371,6 @@ body{
     background-image: url('../Backgrounds/Footer_mobile.png');
     width: 500px;
     height:900px;
-  
    }
 
    #divider1{
@@ -411,7 +410,7 @@ body{
     height:180px;
     width:180px;
    }
-   
+
    #works {
     grid-template-rows: repeat(5,120px);
     grid-template-columns: repeat(2,120px);
