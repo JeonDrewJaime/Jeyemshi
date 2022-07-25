@@ -157,7 +157,7 @@ body{
     }
 }
 
-@media(max-width: 1400px){
+@media(max-width: 1300px){
  .floats{
   padding: 50px 0px 0px 60%;
  }
