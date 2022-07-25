@@ -1,0 +1,439 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+}
+body{
+    background-color: rgb(28, 4, 23);
+    display:grid;
+    justify-content:center;
+    height: 100%;
+}
+
+#part1{
+   background-image: url('../Backgrounds/TP1_VILLABER_dark.png');
+  background-size:cover;
+  background-position: 50% 22.5%;
+  background-repeat: no-repeat;
+  z-index:3;
+  width:1900px;
+  height:1000px;
+  transition:0.5s;
+
+}
+
+.line{
+    padding:0px 30px 0px 30px;
+    color: white;
+    font-family: 'Gotham Light', sans-serif;
+    pointer-events:none;
+    font-size: 29px;
+
+}
+#divider1{
+   padding:150px 0px 0px 0px;
+   width:1900px;
+   position:absolute;
+
+}
+
+.floats{
+    padding: 50px 50px 0px 70%;
+    position:fixed;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+
+.withLine{
+    color: white;
+    font-family: 'Gotham Light', sans-serif;
+    text-decoration: none;
+    font-size: 27px;
+    transition: 0.5s;
+}
+
+.withLine:hover{
+    color: rgb(161, 0, 140);
+}
+
+#part2{
+    background-color: black;
+    background-repeat: no-repeat;
+    width:1900px;
+    height:2020px;
+    transition:0.5s;
+    z-index: 2;
+}
+
+.headers{
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+    font-size:50px;
+    text-align: center;
+    padding: 450px 0px 30px 50px;
+    letter-spacing: 30px;
+}
+
+.headers2{
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+    font-size:50px;
+    text-align: center;
+    padding: 180px 0px 30px 50px;
+    letter-spacing: 30px;
+}
+
+#works{
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,500px);
+    grid-template-rows: repeat(3,500px);
+    grid-gap:80px;
+    margin: 200px 0px 0px 0px;
+}
+
+#art1, #art2, #art3,  #art4, #art5, #art6, #art7, #art8, #art9{
+    width:500px;
+    height:500px;
+    object-fit:cover;
+    object-position: top;
+}
+
+.hover{
+    transition: 0.5s;
+}
+.hover:hover{
+    transform: scale(1.1); 
+    cursor:pointer;
+}
+
+#divider2{
+    margin: 450px 0px 0px 0px;
+    width:1900px;
+    position:absolute;
+}
+
+#part3{
+    background-image: url('../Backgrounds/Footer.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    z-index:1;
+    width:1900px;
+    height:1000px;
+    transition:0.5s;
+}
+
+#footer{
+    margin:230px 500px 0px 500px ;
+}
+
+.info{
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+    font-size:27px;
+    margin:20px 0px 25px 220px;
+}
+
+.link{
+    color: white;
+    font-family: 'Gotham Light', sans-serif;
+    font-size:27px;
+    text-decoration: none;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.link:hover{
+    color: #69ffff;
+}
+
+
+.art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9{
+    position:fixed;
+    justify-self: right;
+    padding: 5% 4% 3% 5%;
+     width:90%;
+     height:80%;
+     object-fit:contain;
+}
+
+#black{
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.257);
+    background-size:cover;
+    z-index:5;
+}
+
+.x{
+    background-color: azure;
+    z-index:5;
+    margin:20px 35px 0px 0px;
+    border-radius: 50%;
+    justify-self:right;
+    height:50px;
+    width: 50px;
+    position:fixed;
+    z-index:6;
+    transition:1s;
+}
+
+.inner{
+    padding-top:8px;
+    color: black;
+    text-align:center;
+    font-family: 'Gotham Light', sans-serif;
+    font-size: 30px;
+    transition:0.5s;
+}
+
+.x:hover{
+    background-color: rgb(161, 0, 140);
+    cursor:pointer;
+}
+
+.x:hover > .inner{
+    color: #81ffff;
+}
+/*Desktop response*/
+@media(max-width: 1650px){
+    .floats{
+     padding: 50px 0px 0px 65%;
+    }
+}
+
+@media(max-width: 1300px){
+ .floats{
+  padding: 50px 0px 0px 60%;
+ }
+}
+
+@media(max-width: 1200px){
+ .floats{
+  padding: 50px 50px 0px 50%;
+ }
+}
+
+@media(max-width: 1000px){
+ .floats{
+  padding: 50px 50px 0px 40%;
+ }
+}
+
+@media(max-width: 850px){
+    .floats{
+     padding: 50px 50px 0px 30%;
+    }
+}
+
+ /*Tablet response*/
+ @media (max-width: 768px) {
+
+   .headers{
+    font-size: 25px;
+    padding:180px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+
+   .headers2{
+    font-size: 25px;
+    padding:90px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+   
+   #part1{
+    width: 768px;
+    height: 400px;
+    object-fit:contain;
+   }
+
+   #part3{
+  
+    width: 768px;
+    height:400px;
+    object-fit:contain;
+   }
+
+   .withLine{
+    font-size: 15px;
+   }
+
+   .line {
+    font-size: 15px;
+    padding:0px 10px 0px 10px;
+   }
+
+   .floats{
+    padding: 30px 0px 0px 60%;
+   }
+   
+   #divider1{
+    width:768px;
+   padding-top: 74px;
+   }
+
+   #divider2{
+    width:768px;
+    margin-top:170px;
+   }
+   
+   #part2{
+    width:768px;
+    height:875px;
+    object-fit:contain;
+   }
+
+   .options{
+    height: 230px;
+    width:  175px;
+   }
+
+   #works{
+    grid-template-columns: repeat(3,150px);
+    margin:90px 40px 0px 0px;
+    grid-template-rows: repeat(3,180px);
+    grid-gap:80px;
+   }
+
+   #art1, #art2, #art3,  #art4, #art5, #art6, #art7, #art8, #art9{
+    height:200px;
+    width:200px;
+   }
+   .sets{
+    font-size:15px;
+    padding-top:5px;
+   }
+
+   .art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9{
+    padding: 13% 4% 3% 5%;
+   }
+
+   .x{
+    justify-self:center;
+    margin-right:0px;
+   }
+   #footer{
+    margin:70px 50px 0px 65px ;
+   }
+
+   .info{
+    font-size:13px;
+    margin:15px 0px 10px 200px;
+   }
+
+   .link{
+    font-size:13px;
+   }
+}
+
+@media(max-width: 750px){
+    .floats{
+     padding: 30px 50px 0px 60%;
+    }
+}
+
+@media(max-width: 735px){
+    .floats{
+     padding: 30px 50px 0px 53%;
+    }
+}
+
+@media(max-width: 620px){
+    .floats{
+     padding: 30px 50px 0px 43%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    /* Smartphones, Android phones, landscape ihone */
+
+   #part1{
+    background-image: url('../Backgrounds/graphic_mobile_copy.png');
+    width:500px;
+    height:888px;
+    object-position:top right;
+   }
+
+   #part2 {
+    width:500px;
+    height:1180px;
+    object-fit: cover;
+   }
+
+   #part3 {
+    background-image: url('../Backgrounds/Footer_mobile.png');
+    width: 500px;
+    height:900px;
+  
+   }
+
+   #divider1{
+    width:500px;
+    height:50px;
+    object-fit: cover;
+    margin-top:45px;
+   }
+
+   #divider2{
+    width:500px;
+    height:50px;
+    object-fit: cover;
+    margin-top:100px;
+   }
+
+   .floats{
+    padding: 30px 10% 0px 30%;
+   }
+
+   .withLine{
+    font-size: 15px;
+   }
+
+   .line {
+    font-size: 15px;
+    padding:0px 10px 0px 10px;
+   }
+
+   .options{
+    height: 250px;
+    width:  200px;
+   }
+   
+   #art1, #art2, #art3,  #art4, #art5, #art6, #art7, #art8, #art9{
+    height:180px;
+    width:180px;
+   }
+   #works {
+    grid-template-rows: repeat(5,120px);
+    grid-template-columns: repeat(2,120px);
+    padding:10px 20px 0px 0px;
+   }
+
+   .headers1{
+    font-size: 25px;
+    padding:320px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+
+   .headers{
+    font-size: 25px;
+    padding:750px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+
+   .info{
+    margin:15px 0px 10px 66px;
+   }
+
+   #footer{
+    margin:280px 50px 0px 65px ;
+   }
+  }
+
+
+ 
