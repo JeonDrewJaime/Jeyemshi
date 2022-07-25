@@ -1,0 +1,449 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color: rgb(59, 0, 47);
+    display:grid;
+    justify-content:center;
+}
+
+#part1{
+  background-image: url('./Backgrounds/Jeyemshi_banner_LGBT.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:1000px;
+}
+
+.line{
+    padding:0px 30px 0px 30px;
+    color: white;
+    font-family: 'Gotham Light', sans-serif;
+    pointer-events:none;
+    font-size: 29px;
+
+}
+#divider1{
+   margin: 950px 0px 0px 0px;
+   width:1900px;
+   position:absolute;
+   object-fit: contain;
+}
+
+.floats{
+    padding: 50px 0px 0px 75%;
+    object-fit: contain;
+    position:fixed;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+
+.withLine{
+    color: white;
+    font-family: 'Gotham Light', sans-serif;
+    text-decoration: none;
+    font-size: 27px;
+    transition: 0.5s;
+}
+
+.withLine:hover{
+    color: rgb(161, 0, 140);
+}
+
+#part2{
+    background-image: url('./Backgrounds/Portfolios_BG.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:1900px;
+    height:1080px;
+}
+
+.headers, .headers1{
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+    font-size:50px;
+    text-align: center;
+    padding: 140px 0px 30px 50px;
+    letter-spacing: 30px;
+}
+
+
+#works{
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,500px);
+    grid-gap:30px;
+    padding: 70px 0px 100px 0px;
+    transition:0.5s;
+}
+
+#art{
+    text-decoration: none;
+    transition:0.5s;
+    text-align: center;
+}
+
+#art:hover{
+    transform: scale(1.1); 
+    z-index:3; 
+}
+
+#art:hover > .sets{
+    color: #69ffff;
+}
+
+.options{
+    height: 500px;
+    width:  450px;
+    object-fit: contain;
+}
+
+
+.sets{
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+    font-size:25px;
+    text-align: center;
+    padding:20px 0px 0px 0px;
+    transition:0.5s;
+}
+
+#divider2{
+    margin: 95px 0px 0px 0px;
+    width:1900px;
+    position:relative;
+}
+
+#part3{
+    background-image: url('./Backgrounds/Footer.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:1900px;
+    height:1000px;
+}
+
+#footer{
+    margin:230px 500px 0px 500px ;
+}
+
+.info{
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+    font-size:27px;
+    margin:20px 0px 25px 220px;
+}
+
+.link{
+    color: white;
+    font-family: 'Gotham Light', sans-serif;
+    font-size:27px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.link:hover{
+    color: #69ffff;
+}
+
+@media(max-width: 1600px){
+    .floats{
+     padding: 50px 0px 0px 65%;
+    }
+}
+
+@media(max-width: 1300px){
+ .floats{
+  padding: 50px 0px 0px 60%;
+ }
+}
+
+@media(max-width: 1100px){
+ .floats{
+  padding: 50px 50px 0px 50%;
+ }
+}
+
+@media(max-width: 1000px){
+ .floats{
+  padding: 50px 50px 0px 40%;
+ }
+}
+
+@media(max-width: 850px){
+    .floats{
+     padding: 50px 50px 0px 30%;
+    }
+}
+
+ /*Tablet response*/
+@media (max-width: 768px) {
+    /* With line*/
+
+   .headers, .headers1{
+    font-size: 25px;
+    padding:70px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+   
+   #part1{
+    width: 768px;
+    height: 400px;
+    object-fit:contain;
+   }
+
+   #part3{
+  
+    width: 768px;
+    height:400px;
+    object-fit:contain;
+   }
+   .withLine{
+    font-size: 15px;
+   }
+
+   .line {
+    font-size: 15px;
+    padding:0px 10px 0px 10px;
+   }
+
+   .floats{
+    padding: 30px 0px 0px 70%;
+   }
+   
+   #divider1{
+    width:768px;
+    margin-top:382px;
+   }
+
+   #divider2{
+    width:768px;
+    margin-top:79px;
+   }
+   
+   #part2{
+    width:768px;
+    height:480px;
+    object-fit:contain;
+   }
+
+   .options{
+    height: 230px;
+    width:  175px;
+   }
+
+   #works{
+    grid-template-columns: repeat(3,170px);
+    padding:30px 20px 0px 0px;
+   }
+
+   .sets{
+    font-size:15px;
+    padding-top:5px;
+   }
+
+   #footer{
+    margin:50px 50px 0px 65px ;
+   }
+
+   .info{
+    font-size:13px;
+    margin:15px 0px 10px 198px;
+   }
+
+   .link{
+    font-size:13px;
+   }
+}
+@media(max-width: 720px){
+    .floats{
+     padding: 30px 50px 0px 60%;
+    }
+}
+
+@media(max-width: 660px){
+    .floats{
+     padding: 30px 50px 0px 55%;
+    }
+}
+
+@media(max-width: 620px){
+    .floats{
+     padding: 30px 50px 0px 46%;
+    }
+}
+    /*Mobile response*/
+@media (max-width: 500px) {
+    /* Smartphones, Android phones, landscape ihone */
+
+   #part1{
+    background-image: url(./Backgrounds/mobile_banner.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:500px;
+    height:888px;
+    
+   }
+
+   #part2 {
+    width:500px;
+    height:1100px;
+    object-fit: cover;
+   }
+
+   #part3 {
+    background-image: url(./Backgrounds/Footer_Mobile.png);
+    width: 500px;
+    height:900px;
+  
+   }
+
+   #divider1{
+    width:500px;
+    height:45px;
+    object-fit: cover;
+    margin-top:865px;
+   }
+
+   #divider2{
+    width:500px;
+    height:45px;
+    object-fit: cover;
+    margin-top:72px;
+   }
+
+   .floats{
+    padding: 30px 10% 0px 30%;
+   }
+
+   .withLine{
+    font-size: 15px;
+   }
+
+   .line {
+    font-size: 15px;
+    padding:0px 10px 0px 10px;
+   }
+
+   .options{
+    height: 250px;
+    width:  200px;
+   }
+
+   #works {
+    grid-template-rows: repeat(3,270px);
+    grid-template-columns: repeat(1,400px);
+    padding:50px 0px 0px 0px;
+   }
+
+   #art {
+    display:grid;
+    grid-template-columns: repeat(2,200px);
+    }
+
+   .sets {
+    text-align:left;
+    font-size:25px;
+    padding:90px 100px 0px 60px
+   }
+
+   .headers1{
+    font-size: 25px;
+    padding:320px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+
+   .info{
+    margin:15px 0px 10px 66px;
+   }
+}
+
+@media (max-width: 480px) {
+    /* Smartphones, Android phones, landscape ihone */
+
+   #part1{
+    background-image: url(./Backgrounds/mobile_banner.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:500px;
+    height:888px;
+    
+   }
+
+   #part2 {
+    width:500px;
+    height:1100px;
+    object-fit: cover;
+   }
+
+   #part3 {
+    background-image: url(./Backgrounds/Footer_Mobile.png);
+    width: 500px;
+    height:900px;
+  
+   }
+
+   #divider1{
+    width:500px;
+    height:45px;
+    object-fit: cover;
+    margin-top:865px;
+   }
+
+   #divider2{
+    width:500px;
+    height:45px;
+    object-fit: cover;
+    margin-top:72px;
+   }
+
+   .floats{
+    padding: 30px 10% 0px 30%;
+   }
+
+   .withLine{
+    font-size: 15px;
+   }
+
+   .line {
+    font-size: 15px;
+    padding:0px 10px 0px 10px;
+   }
+
+   .options{
+    height: 250px;
+    width:  200px;
+   }
+
+   #works {
+    grid-template-rows: repeat(3,270px);
+    grid-template-columns: repeat(1,400px);
+    padding:50px 0px 0px 0px;
+   }
+
+   #art {
+    display:grid;
+    grid-template-columns: repeat(2,200px);
+    }
+
+   .sets {
+    text-align:left;
+    font-size:25px;
+    padding:90px 100px 0px 60px
+   }
+
+   .headers1{
+    font-size: 25px;
+    padding:320px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+
+   .info{
+    margin:15px 0px 10px 66px;
+   }
+}
