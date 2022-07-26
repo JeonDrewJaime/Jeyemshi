@@ -793,3 +793,101 @@ body{
     margin:70px 20px 0px 20px;
    }
 }
+
+
+@media (max-width: 320px) {
+    /* Smartphones, Android phones, landscape ihone */
+
+   #part1{
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:330px;
+    height:586px;
+   }
+
+   #part2 {
+    width:330px;
+    height:1100px;
+   }
+
+   #part3 {
+    width:330px;
+    height:900px;
+  
+   }
+
+   #divider1{
+    width:330px;
+    height:45px;
+    object-fit: cover;
+    margin-top:560px;
+   }
+
+   #divider2{
+    width:330px;
+    height:45px;
+    object-fit: cover;
+    margin-top:72px;
+   }
+
+   .floats{
+    padding: 30px 10% 0px 15%;
+    position:fixed;
+   }
+
+   .withLine{
+    font-size: 15px;
+   }
+
+   .line {
+    font-size: 15px;
+    padding:0px 10px 0px 10px;
+   }
+
+   .options{
+    height: 250px;
+    width:  180px;
+   }
+
+   #works {
+    grid-template-rows: repeat(3,270px);
+    grid-template-columns: repeat(1,320px);
+    padding:50px 0px 0px 40px;
+   }
+
+   #art {
+    display:grid;
+    grid-template-columns: repeat(2,135px);
+    }
+
+   .sets {
+    text-align:left;
+    font-size:20px;
+    padding:90px 100px 0px 60px
+   }
+
+   .headers{
+    font-size: 20px;
+    text-align:center;
+    padding-left:15px;
+    letter-spacing: 15px;
+   }
+
+   .headers1{
+    letter-spacing: 15px;
+    font-size: 20px;
+    padding:50px 0px 0px 25px;
+   }
+   .info{
+    font-size: 10px;
+    margin:15px 0px 10px 50px;
+   }
+
+   .link{
+    font-size: 10px;
+   }
+
+   #footer{
+    margin:340px 20px 0px 20px;
+   }
+}
