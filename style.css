@@ -36,7 +36,7 @@ body{
 }
 
 .floats{
-    padding: 50px 0px 0px 75%;
+    padding: 50px 0px 0px 73%;
     object-fit: contain;
     position:fixed;
     z-index: 2;
@@ -69,7 +69,7 @@ body{
     font-family: 'Gotham Black', sans-serif;
     font-size:50px;
     text-align: center;
-    padding: 140px 0px 30px 50px;
+    padding: 140px 0px 30px 0px;
     letter-spacing: 30px;
 }
 
@@ -152,35 +152,74 @@ body{
     color: #69ffff;
 }
 
-@media(max-width: 1600px){
+@media(max-width: 1700px){
     .floats{
-     padding: 50px 0px 0px 65%;
+     padding: 50px 0px 0px 70%;
     }
+}
+
+@media(max-width: 1500px){
+ .floats{
+  padding: 50px 0px 0px 66%;
+ }
 }
 
 @media(max-width: 1300px){
  .floats{
-  padding: 50px 0px 0px 60%;
+  padding: 50px 50px 0px 60.5%;
  }
+}
+
+@media(max-width: 1250px){
+ .floats{
+  padding: 50px 50px 0px 57%;
+ }
+}
+
+@media(max-width: 1150px){
+    .floats{
+     padding: 50px 50px 0px 54%;
+    }
 }
 
 @media(max-width: 1100px){
- .floats{
-  padding: 50px 50px 0px 50%;
- }
+    .floats{
+     padding: 50px 50px 0px 52%;
+    }
+}
+
+@media(max-width: 1050px){
+    .floats{
+     padding: 50px 50px 0px 50%;
+    }
 }
 
 @media(max-width: 1000px){
- .floats{
-  padding: 50px 50px 0px 40%;
- }
-}
-
-@media(max-width: 850px){
     .floats{
-     padding: 50px 50px 0px 30%;
+     padding: 50px 50px 0px 45%;
     }
 }
+
+@media(max-width: 910px){
+    .floats{
+     padding: 50px 50px 0px 44%;
+    }
+}
+
+@media(max-width: 900px){
+    .floats{
+     padding: 50px 50px 0px 40%;
+    }
+}
+
+@media(max-width: 880px){
+    .floats{
+     padding: 50px 50px 0px 35%;
+    }
+}
+
+
+
 
  /*Tablet response*/
 @media (max-width: 768px) {
@@ -214,7 +253,7 @@ body{
    }
 
    .floats{
-    padding: 30px 0px 0px 70%;
+    padding: 30px 0px 0px 65%;
    }
    
    #divider1{
@@ -267,17 +306,43 @@ body{
     }
 }
 
+@media(max-width: 700px){
+    .floats{
+     padding: 30px 50px 0px 56%;
+    }
+}
+
 @media(max-width: 660px){
     .floats{
-     padding: 30px 50px 0px 55%;
+     padding: 30px 50px 0px 53%;
     }
 }
 
 @media(max-width: 620px){
     .floats{
-     padding: 30px 50px 0px 46%;
+     padding: 30px 50px 0px 50%;
     }
 }
+
+@media(max-width: 580px){
+    .floats{
+     padding: 30px 50px 0px 45%;
+    }
+}
+
+@media(max-width: 550px){
+    .floats{
+     padding: 30px 50px 0px 45%;
+    }
+}
+
+@media(max-width: 520px){
+    .floats{
+     padding: 30px 50px 0px 40%;
+    }
+}
+
+
     /*Mobile response*/
 @media (max-width: 500px) {
     /* Smartphones, Android phones, landscape ihone */
@@ -319,7 +384,7 @@ body{
    }
 
    .floats{
-    padding: 30px 10% 0px 30%;
+    padding: 30px 10% 0px 25%;
    }
 
    .withLine{
@@ -405,6 +470,175 @@ body{
 
    .floats{
     padding: 30px 10% 0px 30%;
+   }
+
+   .withLine{
+    font-size: 15px;
+   }
+
+   .line {
+    font-size: 15px;
+    padding:0px 10px 0px 10px;
+   }
+
+   .options{
+    height: 250px;
+    width:  200px;
+   }
+
+   #works {
+    grid-template-rows: repeat(3,270px);
+    grid-template-columns: repeat(1,400px);
+    padding:50px 0px 0px 0px;
+   }
+
+   #art {
+    display:grid;
+    grid-template-columns: repeat(2,200px);
+    }
+
+   .sets {
+    text-align:left;
+    font-size:25px;
+    padding:90px 100px 0px 60px
+   }
+
+   .headers1{
+    font-size: 25px;
+    padding:320px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+
+   .info{
+    margin:15px 0px 10px 66px;
+   }
+}
+
+
+@media (max-width: 500px) {
+    /* Smartphones, Android phones, landscape ihone */
+
+   #part1{
+    background-image: url(./Backgrounds/mobile_banner.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:500px;
+    height:888px;
+    
+   }
+
+   #part2 {
+    width:500px;
+    height:1100px;
+    object-fit: cover;
+   }
+
+   #part3 {
+    background-image: url(./Backgrounds/Footer_Mobile.png);
+    width: 500px;
+    height:900px;
+  
+   }
+
+   #divider1{
+    width:500px;
+    height:45px;
+    object-fit: cover;
+    margin-top:865px;
+   }
+
+   #divider2{
+    width:500px;
+    height:45px;
+    object-fit: cover;
+    margin-top:72px;
+   }
+
+   .floats{
+    padding: 30px 10% 0px 25%;
+   }
+
+   .withLine{
+    font-size: 15px;
+   }
+
+   .line {
+    font-size: 15px;
+    padding:0px 10px 0px 10px;
+   }
+
+   .options{
+    height: 250px;
+    width:  200px;
+   }
+
+   #works {
+    grid-template-rows: repeat(3,270px);
+    grid-template-columns: repeat(1,400px);
+    padding:50px 0px 0px 0px;
+   }
+
+   #art {
+    display:grid;
+    grid-template-columns: repeat(2,200px);
+    }
+
+   .sets {
+    text-align:left;
+    font-size:25px;
+    padding:90px 100px 0px 60px
+   }
+
+   .headers1{
+    font-size: 25px;
+    padding:320px 0px 0px 0px;
+    letter-spacing: 15px;
+   }
+
+   .info{
+    margin:15px 0px 10px 66px;
+   }
+}
+
+@media (max-width: 480px) {
+    /* Smartphones, Android phones, landscape ihone */
+
+   #part1{
+    background-image: url(./Backgrounds/mobile_banner.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:490px;
+    height:872px;
+   }
+
+   #part2 {
+    width:490px;
+    height:1100px;
+   }
+
+   #part3 {
+    width: 490px;
+    height:900px;
+  
+   }
+
+   #divider1{
+    width:490px;
+    height:45px;
+    object-fit: cover;
+    margin-top:845px;
+   }
+
+   #divider2{
+    width:490px;
+    height:45px;
+    object-fit: cover;
+    margin-top:72px;
+   }
+
+   .floats{
+    padding: 30px 10% 0px 25%;
+    position:fixed;
    }
 
    .withLine{
