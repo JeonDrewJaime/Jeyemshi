@@ -1,5 +1,19 @@
 @import url('http://fonts.cdnfonts.com/css/gotham');
 
+@font-face {
+    font-family: 'Gotham Light';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gotham Light'), url('https://fonts.cdnfonts.com/s/14898/Gotham-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gotham Black'), url('https://fonts.cdnfonts.com/s/14898/Gotham-Black.woff') format('woff');
+}
+
 *{
     margin:0;
     padding:0;
