@@ -600,37 +600,36 @@ body{
    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 395px) {
     /* Smartphones, Android phones, landscape ihone */
 
    #part1{
-    background-image: url(./Backgrounds/mobile_banner.png);
     background-size:contain;
     background-repeat: no-repeat;
-    width:490px;
+    width:395px;
     height:872px;
    }
 
    #part2 {
-    width:490px;
+    width:395px;
     height:1100px;
    }
 
    #part3 {
-    width: 490px;
+    width: 395px;
     height:900px;
   
    }
 
    #divider1{
-    width:490px;
+    width:395px;
     height:45px;
     object-fit: cover;
     margin-top:845px;
    }
 
    #divider2{
-    width:490px;
+    width:395px;
     height:45px;
     object-fit: cover;
     margin-top:72px;
