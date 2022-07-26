@@ -527,47 +527,44 @@ body{
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 412px) {
     /* Smartphones, Android phones, landscape ihone */
 
    #part1{
-    background-image: url(./Backgrounds/mobile_banner.png);
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
-    width:500px;
-    height:888px;
-    
+    width:412px;
+    height:712px;
    }
 
    #part2 {
-    width:500px;
+    width:412px;
     height:1100px;
-    object-fit: cover;
    }
 
    #part3 {
-    background-image: url(./Backgrounds/Footer_Mobile.png);
-    width: 500px;
+    width:412px;
     height:900px;
   
    }
 
    #divider1{
-    width:500px;
+    width:412px;
     height:45px;
     object-fit: cover;
-    margin-top:865px;
+    margin-top:690px;
    }
 
    #divider2{
-    width:500px;
+    width:412px;
     height:45px;
     object-fit: cover;
     margin-top:72px;
    }
 
    .floats{
-    padding: 30px 10% 0px 25%;
+    padding: 30px 10% 0px 22%;
+    position:fixed;
    }
 
    .withLine{
@@ -586,13 +583,13 @@ body{
 
    #works {
     grid-template-rows: repeat(3,270px);
-    grid-template-columns: repeat(1,400px);
-    padding:50px 0px 0px 0px;
+    grid-template-columns: repeat(1,355px);
+    padding:50px 0px 0px 5px;
    }
 
    #art {
     display:grid;
-    grid-template-columns: repeat(2,200px);
+    grid-template-columns: repeat(2,165px);
     }
 
    .sets {
@@ -601,14 +598,19 @@ body{
     padding:90px 100px 0px 60px
    }
 
-   .headers1{
+   .headers{
     font-size: 25px;
-    padding:320px 0px 0px 0px;
+    text-align:center;
+    padding-left:10px;
     letter-spacing: 15px;
    }
 
    .info{
-    margin:15px 0px 10px 66px;
+    margin:15px 0px 10px 20px;
+   }
+
+   #footer{
+    margin-top: 55px;
    }
 }
 
@@ -891,3 +893,4 @@ body{
     margin:340px 20px 0px 20px;
    }
 }
+
