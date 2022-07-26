@@ -606,37 +606,37 @@ body{
    #part1{
     background-size:contain;
     background-repeat: no-repeat;
-    width:395px;
-    height:872px;
+    width:400px;
+    height:715px;
    }
 
    #part2 {
-    width:395px;
+    width:400px;
     height:1100px;
    }
 
    #part3 {
-    width: 395px;
+    width: 400px;
     height:900px;
   
    }
 
    #divider1{
-    width:395px;
+    width:400px;
     height:45px;
     object-fit: cover;
-    margin-top:845px;
+    margin-top:688px;
    }
 
    #divider2{
-    width:395px;
+    width:400px;
     height:45px;
     object-fit: cover;
     margin-top:72px;
    }
 
    .floats{
-    padding: 30px 10% 0px 25%;
+    padding: 30px 10% 0px 22%;
     position:fixed;
    }
 
@@ -657,12 +657,12 @@ body{
    #works {
     grid-template-rows: repeat(3,270px);
     grid-template-columns: repeat(1,400px);
-    padding:50px 0px 0px 0px;
+    padding:50px 0px 0px 50px;
    }
 
    #art {
     display:grid;
-    grid-template-columns: repeat(2,200px);
+    grid-template-columns: repeat(2,167px);
     }
 
    .sets {
@@ -671,13 +671,14 @@ body{
     padding:90px 100px 0px 60px
    }
 
-   .headers1{
+   .headers{
     font-size: 25px;
-    padding:320px 0px 0px 0px;
+    text-align:center;
+    padding-left:10px;
     letter-spacing: 15px;
    }
 
    .info{
-    margin:15px 0px 10px 66px;
+    margin:15px 0px 10px 15px;
    }
 }
