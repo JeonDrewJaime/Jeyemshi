@@ -604,39 +604,39 @@ body{
     /* Smartphones, Android phones, landscape ihone */
 
    #part1{
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
-    width:400px;
-    height:715px;
+    width:395px;
+    height:665px;
    }
 
    #part2 {
-    width:400px;
+    width:395px;
     height:1100px;
    }
 
    #part3 {
-    width: 400px;
+    width:395px;
     height:900px;
   
    }
 
    #divider1{
-    width:400px;
+    width:395px;
     height:45px;
     object-fit: cover;
-    margin-top:688px;
+    margin-top:650px;
    }
 
    #divider2{
-    width:400px;
+    width:395px;
     height:45px;
     object-fit: cover;
     margin-top:72px;
    }
 
    .floats{
-    padding: 30px 10% 0px 22%;
+    padding: 30px 10% 0px 21%;
     position:fixed;
    }
 
@@ -656,13 +656,13 @@ body{
 
    #works {
     grid-template-rows: repeat(3,270px);
-    grid-template-columns: repeat(1,400px);
-    padding:50px 0px 0px 50px;
+    grid-template-columns: repeat(1,355px);
+    padding:50px 0px 0px 5px;
    }
 
    #art {
     display:grid;
-    grid-template-columns: repeat(2,167px);
+    grid-template-columns: repeat(2,165px);
     }
 
    .sets {
@@ -679,6 +679,6 @@ body{
    }
 
    .info{
-    margin:15px 0px 10px 15px;
+    margin:15px 0px 10px 10px;
    }
 }
