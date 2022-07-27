@@ -60,7 +60,6 @@ body{
     z-index: 4;
 }
 
-
 .withLine{
     color: white;
     font-family: 'Gotham Light', sans-serif;
@@ -616,10 +615,8 @@ body{
    }
 
    #part3 {
-    background-fit:contain;
     width:395px;
     height:715px;
-  
    }
 
    #divider1{
