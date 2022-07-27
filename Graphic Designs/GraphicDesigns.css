@@ -17,6 +17,7 @@
     padding:0;
     scroll-behavior:smooth;
 }
+
 body{
     background-color: rgb(28, 4, 23);
     display:grid;
@@ -24,7 +25,7 @@ body{
     height: 100%;
 }
 
-#part1{
+#part1 {
    background-image: url('../Backgrounds/TP1_VILLABER_dark.png');
   background-size:cover;
   background-position: 50% 22.5%;
@@ -33,7 +34,6 @@ body{
   width:1900px;
   height:1000px;
   transition:0.5s;
-
 }
 
 .line{
@@ -44,6 +44,7 @@ body{
     font-size: 29px;
 
 }
+
 #divider1{
    padding:150px 0px 0px 0px;
    width:1900px;
@@ -57,7 +58,6 @@ body{
     z-index: 4;
     transition: 0.5s;
 }
-
 
 .withLine{
     color: white;
@@ -118,6 +118,7 @@ body{
 .hover{
     transition: 0.5s;
 }
+
 .hover:hover{
     transform: scale(1.1); 
     cursor:pointer;
@@ -210,6 +211,7 @@ body{
 .x:hover > .inner{
     color: #81ffff;
 }
+
 /*Desktop response*/
 @media(max-width: 1650px){
     .floats{
@@ -335,7 +337,7 @@ body{
 }
 
  /*Tablet response*/
- @media (max-width: 768px) {
+@media (max-width: 768px) {
 
    .headers{
     font-size: 25px;
@@ -539,7 +541,7 @@ body{
    }
   }
 
-  @media (max-width: 395px) {
+@media (max-width: 395px) {
     /* Smartphones, Android phones, landscape ihone */
 
    #part1{
@@ -563,7 +565,7 @@ body{
     width:395px;
     height:45px;
     object-fit: cover;
-    margin-top:25px;
+    margin-top:28px;
    }
 
    #divider2{
@@ -643,7 +645,7 @@ body{
 }
 }
 
-  @media (max-height: 395px) and (orientation: landscape) {
+@media (max-height: 395px) and (orientation: landscape) {
 
     #part1{
      background-size:cover;

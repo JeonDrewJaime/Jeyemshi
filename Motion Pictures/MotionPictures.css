@@ -1,5 +1,16 @@
 @import url('http://fonts.cdnfonts.com/css/gotham');
 
+::-webkit-scrollbar{
+    width:20px;
+}
+
+::-webkit-scrollbar-track{
+    background: #33345a;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(161, 0, 140);
+}
 
 *{
     margin:0;
@@ -140,6 +151,110 @@ iframe{
     }
 }
 
+@media(max-width: 1366px){
+
+    #part1{
+        background-size:cover;
+        background-repeat: no-repeat;
+        width:1366px;
+        height:600px;
+      }
+
+    #part2{
+        background-size:cover;
+        background-repeat: no-repeat;
+        width:1366px;
+        height: 1000px;
+      }
+      
+    #part3{
+        background-size:cover;
+        background-repeat: no-repeat;
+        width:1366px;
+        height: 780px;
+      }
+
+      #divider1{
+        width:1300px;
+        height: 120px;
+        padding-top:526px;
+      }
+
+      #divider2{
+        width:1366px;
+        padding-top:1580px;
+      }
+
+      .options{
+        height: 450px;
+        width:  400px;
+    }
+      
+    #works{
+      display:grid;
+     grid-template-columns: repeat(3,400px);
+     grid-gap:30px;
+     padding: 70px 0px 100px 0px;
+     transition:0.5s;
+     }
+
+     .withLine{
+        font-size: 20px;
+    }
+
+    .line{
+        padding:0px 20px 0px 20px;
+        font-size: 22px;
+    }
+
+    .floats{
+     padding: 50px 0px 0px 73%;
+    }
+
+    .headers{
+        font-size:45px;
+        text-align: center;
+        padding: 140px 0px 30px 0px;
+        letter-spacing: 30px;
+    }
+    
+    .headers1{
+        font-size:35px;
+        padding: 100px 0px 0px 0px;
+    }
+    
+    .sets{
+        padding:20px 0px 0px 0px;
+        transition:0.5s;
+    }
+
+    #footer{
+        margin:180px 400px 0px 435px ;
+    }
+    
+    .info{
+        color: white;
+        font-family: 'Gotham Black', sans-serif;
+        font-size:20px;
+        margin:20px 0px 25px 60px;
+    }
+    
+    video{
+        object-fit: contain;
+        width:1336px;
+    }  
+    
+    iframe{
+    margin:150px 250px 0px 20px;
+    width: 1280px;
+    height: 720px;
+}
+    .link{
+        font-size:20px;
+    }
+    
+}
+
 @media(max-width: 1300px){
  .floats{
   padding: 50px 0px 0px 60%;
@@ -166,7 +281,7 @@ iframe{
 
 
  /*Tablet response*/
- @media (max-width: 768px) {
+@media (max-width: 768px) {
 
    .headers{
     font-size: 25px;

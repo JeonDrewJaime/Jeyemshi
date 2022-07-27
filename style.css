@@ -625,36 +625,36 @@ body{
 }
 
 
-@media (max-width: 412px) {
+@media (max-width: 415px) {
     /* Smartphones, Android phones, landscape ihone */
 
    #part1{
     background-size:cover;
     background-repeat: no-repeat;
-    width:412px;
+    width: 415px;
     height:720px;
    }
 
    #part2 {
-    width:412px;
+    width:415px;
     height:1100px;
    }
 
    #part3 {
-    width:412px;
+    width:415px;
     height:900px;
   
    }
 
    #divider1{
-    width:412px;
+    width:415px;
     height:45px;
     object-fit: cover;
     margin-top:700px;
    }
 
    #divider2{
-    width:412px;
+    width:415px;
     height:45px;
     object-fit: cover;
     margin-top:72px;
