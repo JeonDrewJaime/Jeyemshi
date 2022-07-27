@@ -54,7 +54,7 @@ body{
 }
 
 .floats{
-    padding: 50px 0px 0px 72%;
+    padding: 50px 0px 0px 75%;
     position:fixed;
     transition: 0.5s;
     z-index: 4;
@@ -182,13 +182,13 @@ body{
 .x{
     background-color: azure;
     z-index:6;
-    margin:20px 35px 0px 0px;
+    margin:20px 20px 0px 0px;
     border-radius: 50%;
     justify-self:right;
     height:50px;
     width: 50px;
     position:fixed;
-    transition:1s;
+    transition:0.3s;
 }
 
 .inner{
@@ -201,12 +201,12 @@ body{
 }
 
 .x:hover{
-    background-color: rgb(161, 0, 140);
+    background-color: #33345a;
     cursor:pointer;
 }
 
 .x:hover > .inner{
-    color: #81ffff;
+    color: rgb(202, 10, 177);
 }
 
 /*Desktop response*/
@@ -317,55 +317,55 @@ body{
 
 @media(max-width: 1300px){
  .floats{
-  padding: 50px 50px 0px 60.5%;
+  padding: 50px 50px 0px 70%;
  }
 }
 
 @media(max-width: 1250px){
  .floats{
-  padding: 50px 50px 0px 57%;
+  padding: 50px 50px 0px 65%;
  }
 }
 
 @media(max-width: 1150px){
     .floats{
-     padding: 50px 50px 0px 54%;
+     padding: 50px 50px 0px 65%;
     }
 }
 
 @media(max-width: 1100px){
     .floats{
-     padding: 50px 50px 0px 52%;
+     padding: 50px 50px 0px 65%;
     }
 }
 
 @media(max-width: 1050px){
     .floats{
-     padding: 50px 50px 0px 50%;
+     padding: 50px 50px 0px 63%;
     }
 }
 
 @media(max-width: 1000px){
     .floats{
-     padding: 50px 50px 0px 45%;
+     padding: 50px 50px 0px 61%;
     }
 }
 
 @media(max-width: 910px){
     .floats{
-     padding: 50px 50px 0px 44%;
+     padding: 50px 50px 0px 59%;
     }
 }
 
 @media(max-width: 900px){
     .floats{
-     padding: 50px 50px 0px 40%;
+     padding: 50px 50px 0px 59%;
     }
 }
 
 @media(max-width: 880px){
     .floats{
-     padding: 50px 50px 0px 35%;
+     padding: 50px 50px 0px 53%;
     }
 }
 
@@ -391,10 +391,9 @@ body{
    }
 
    #part3{
-  
     width: 768px;
     height:400px;
-    object-fit:contain;
+    background-size:cover;
    }
 
    .withLine{
@@ -407,12 +406,12 @@ body{
    }
 
    .floats{
-    padding: 30px 0px 0px 60%;
+    padding: 30px 0px 0px 70%;
    }
    
    #divider1{
     width:768px;
-    padding-top:90px;
+    padding-top:43px;
    }
 
    #divider2{
@@ -442,18 +441,13 @@ body{
     height:200px;
     width:200px;
    }
-   .sets{
-    font-size:15px;
-    padding-top:5px;
-   }
 
    .art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9{
     padding: 13% 4% 3% 5%;
    }
 
    .x{
-    justify-self:center;
-    margin-right:0px;
+    justify-self:right;
    }
    
    #footer{
@@ -538,7 +532,7 @@ body{
     width:500px;
     height:50px;
     object-fit: cover;
-    margin-top:30px;
+    margin-top:80px;
    }
 
    #divider2{
@@ -549,7 +543,7 @@ body{
    }
 
    .floats{
-    padding: 30px 10% 0px 25%;
+    padding: 30px 10% 0px 27%;
     transition:0.5s;
    }
 

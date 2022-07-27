@@ -44,8 +44,8 @@ video{
     font-family: 'Gotham Light', sans-serif;
     pointer-events:none;
     font-size: 29px;
-
 }
+
 #divider1{
    padding:755px 0px 0px 0px ;
    width:1900px;
@@ -59,8 +59,7 @@ video{
     z-index: 4;
 }
 
-
-.withLine{
+.withLine {
     color: white;
     font-family: 'Gotham Light', sans-serif;
     text-decoration: none;

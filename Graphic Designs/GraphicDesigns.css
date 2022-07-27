@@ -191,7 +191,7 @@ body{
     width: 50px;
     position:fixed;
     z-index:6;
-    transition:1s;
+    transition:0.3s;
 }
 
 .inner{
@@ -204,12 +204,12 @@ body{
 }
 
 .x:hover{
-    background-color: rgb(161, 0, 140);
+    background-color: #33345a;
     cursor:pointer;
 }
 
 .x:hover > .inner{
-    color: #81ffff;
+    color: rgb(202, 10, 177);
 }
 
 /*Desktop response*/
