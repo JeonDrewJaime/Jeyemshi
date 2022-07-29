@@ -227,31 +227,31 @@ body{
     #part1{
         background-size:cover;
         background-repeat: no-repeat;
-        width:1366px;
+        width:1343px;
         height:768px;
       }
 
     #part2{
         background-size:cover;
         background-repeat: no-repeat;
-        width:1366px;
+        width:1343px;
         height: 1430px;
       }
       
     #part3{
         background-size:contain;
         background-repeat: no-repeat;
-        width:1366px;
+        width:1343px;
         height: 780px;
       }
 
       #divider1{
-        width:1366px;
+        width:1343px;
         margin-top:40px;
       }
 
       #divider2{
-        width:1366px;
+        width:1343px;
         margin-top:300px;
       }
 
@@ -264,7 +264,7 @@ body{
         grid-template-columns: repeat(3,300px);
         grid-template-rows: repeat(3,300px);
         grid-gap:90px;
-        margin: 140px 40px 0px 0px;
+        margin: 140px 45px 0px 0px;
     }
     
     #art1, #art2, #art3,  #art4, #art5, #art6 , #art7, #art8, #art9 {
@@ -272,6 +272,9 @@ body{
         height:350px;
     }
 
+    .art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9 {
+    padding-top:6.9%;
+    }
      .withLine{
         font-size: 20px;
     }
@@ -292,21 +295,21 @@ body{
         letter-spacing: 30px;
     }
     
-    .headers1{
+    .headers2{
         font-size:35px;
         padding: 100px 0px 0px 0px;
     }
     
 
     #footer{
-        margin:180px 400px 0px 390px ;
+        margin:180px 400px 0px 430px ;
     }
     
     .info{
         color: white;
         font-family: 'Gotham Black', sans-serif;
         font-size:20px;
-        margin:20px 0px 25px 80px;
+        margin:20px 0px 25px 70px;
     }
     
     .link{
@@ -385,13 +388,13 @@ body{
    }
    
    #part1{
-    width: 768px;
+    width: 746px;
     height: 400px;
     object-fit:contain;
    }
 
    #part3{
-    width: 768px;
+    width: 746px;
     height:400px;
     background-size:cover;
    }
@@ -410,17 +413,17 @@ body{
    }
    
    #divider1{
-    width:768px;
+    width:746px;
     padding-top:43px;
    }
 
    #divider2{
-    width:768px;
+    width:746px;
     margin-top:170px;
    }
    
    #part2{
-    width:768px;
+    width:746px;
     height:900px;
     object-fit:contain;
    }
@@ -432,7 +435,7 @@ body{
 
    #works{
     grid-template-columns: repeat(3,150px);
-    margin:80px 40px 0px 0px;
+    margin:80px 45px 0px 0px;
     grid-template-rows: repeat(2,180px);
     grid-gap:80px;
    }
@@ -511,32 +514,32 @@ body{
 
    #part1{
     background-image: url('../Backgrounds/neon_mobile.png');
-    width:500px;
+    width:480px;
     height:888px;
     object-position:top right;
    }
 
    #part2 {
-    width:500px;
+    width:480px;
     height:1190px;
     object-fit: cover;
    }
 
    #part3 {
     background-image: url('../Backgrounds/Footer_mobile.png');
-    width: 500px;
+    width: 480px;
     height:900px;
    }
 
    #divider1{
-    width:500px;
+    width:480px;
     height:50px;
     object-fit: cover;
     margin-top:80px;
    }
 
    #divider2{
-    width:500px;
+    width:480px;
     height:50px;
     object-fit: cover;
     margin-top:120px;
@@ -589,7 +592,7 @@ body{
    }
 
    #footer{
-    margin:280px 50px 0px 65px ;
+    margin:280px 50px 0px 60px ;
    }
 }
 
@@ -722,7 +725,7 @@ body{
     width:395px;
     height:45px;
     object-fit: cover;
-    margin-top:25px;
+    padding-top:90px;
    }
 
    #divider2{

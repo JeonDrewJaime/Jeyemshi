@@ -395,17 +395,17 @@ iframe{
    }
 
    #divider1{
-    width:500px;
+    width:490px;
     height:40px;
-    object-fit: cover;
+    object-fit: contain;
     margin-top:-110px;
    }
 
    #divider2{
-    width:500px;
+    width:490px;
     height:50px;
     object-fit: cover;
-    margin-top:-10px;
+    padding-top: 600px;
    }
 
    .floats{
@@ -446,6 +446,10 @@ iframe{
    #footer{
     margin:60px 50px 0px 65px ;
    }
+
+   video{
+    width: 500px;
+   }
  }
 
  @media (max-width: 395px) {
@@ -484,7 +488,7 @@ iframe{
     width:395px;
     height:45px;
     object-fit: cover;
-    margin-top:-680px;
+    margin-top:300px;
    }
 
    .floats{
