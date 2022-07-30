@@ -13,7 +13,7 @@
 }
 
 ::-webkit-scrollbar{
-    width:20px;
+    width:0.5vmax;
 }
 
 ::-webkit-scrollbar-track{
@@ -33,7 +33,14 @@
 body{
     background-color: rgb(59, 0, 47);
     display:grid;
-    justify-content:center;
+}
+
+.floats{
+    margin:2vw 3vw 0px 0px;
+    transition: 0.5s;
+    position:fixed;
+    justify-self: right;
+    z-index: 2;
 }
 
 #part1{
@@ -41,37 +48,28 @@ body{
   background-size:100%;
   background-repeat: no-repeat;
   width:100%;
-  height:1000px;
 }
 
 .line{
-    padding:0px 30px 0px 30px;
+    padding:0px 2vw 0px 2vw;
     color: white;
     font-family: 'Gotham Light', sans-serif;
     pointer-events:none;
-    font-size: 29px;
+    font-size:clamp(18px, 2vw, 1.5vmax);
 }
 
 #divider1{
-   margin: 950px 0px 0px 0px;
-   width:1900px;
-   position:absolute;
+   margin: 50% 0px 0px 0px;
+   width:100%;
+   position:relative;
    object-fit: contain;
-}
-
-.floats{
-    padding: 50px 0px 0px 73%;
-    object-fit: contain;
-    position:fixed;
-    z-index: 2;
-    transition: 0.5s;
 }
 
 .withLine{
     color: white;
     font-family: 'Gotham Light', sans-serif;
     text-decoration: none;
-    font-size: 27px;
+    font-size:clamp(20px, 2vw, 1.5vmax);
     transition: 0.5s;
 }
 
@@ -82,28 +80,37 @@ body{
 #part2{
     background-image: url('./Backgrounds/Portfolios_BG.png');
     background-size:cover;
+    margin-top:-3%;
     background-repeat: no-repeat;
-    width:1900px;
-    height:1080px;
+    width:100%;
+    height:101%;
 }
 
-.headers, .headers1{
+.headers{
     color: white;
     font-family: 'Gotham Black', sans-serif;
-    font-size:50px;
+    font-size:clamp(10px, 3vw, 3vmax);
+    position:relative;
     text-align: center;
-    padding: 140px 0px 30px 0px;
-    letter-spacing: 30px;
+    padding: 5% 0px 2% 0px;
+    letter-spacing: clamp(2px, 2vw, 2vmax);
 }
 
+.headers1{
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+    font-size:clamp(15px, 3vw, 3vmax);
+    position:relative;
+    text-align: center;
+    padding: 7vw 0px 1vw 1.5vw;
+    letter-spacing: clamp(2px, 2vw, 2vmax);
+}
 
 #works{
     display:grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: repeat(3,500px);
-    grid-gap:30px;
-    padding: 70px 0px 100px 0px;
+    justify-content:center;
+    grid-template-columns: repeat(3,28%);
+    grid-gap:5%;
     transition:0.5s;
 }
 
@@ -123,49 +130,55 @@ body{
 }
 
 .options{
-    height: 500px;
-    width:  450px;
+    height: 100%;
+    width:  100%;
     object-fit: contain;
 }
 
 .sets{
     color: white;
     font-family: 'Gotham Black', sans-serif;
-    font-size:25px;
+    font-size:clamp(13px, 2vw, 1.5vmax);
     text-align: center;
-    padding:20px 0px 0px 0px;
     transition:0.5s;
 }
 
 #divider2{
-    margin: 95px 0px 0px 0px;
-    width:1900px;
+    margin: 5% 0px 0px 0px;
+    width:100%;
     position:relative;
 }
 
 #part3{
     background-image: url('./Backgrounds/Footer.png');
-    background-size:cover;
     background-repeat: no-repeat;
-    width:1900px;
-    height:1000px;
+    margin-top: -4%;
+    padding-top:5%;
+    background-size: 100%;
+    width:100%;
+    height:100%;
 }
 
 #footer{
-    margin:230px 500px 0px 500px ;
+    justify-self: center;
+    display:grid;
+    justify-content: center;
+    padding-bottom: 13vw;
 }
 
 .info{
     color: white;
     font-family: 'Gotham Black', sans-serif;
-    font-size:27px;
-    margin:20px 0px 25px 220px;
+    font-size:clamp(5px, 1.5vw, 1.5vmax);
+    text-align: left;
+    margin-top:5%;
+    margin-left:2vw;
 }
 
 .link{
     color: white;
     font-family: 'Gotham Light', sans-serif;
-    font-size:27px;
+    font-size:clamp(5px, 1.6vw, 1.5vmax);
     text-decoration: none;
     transition: 0.5s;
 }
@@ -174,1138 +187,81 @@ body{
     color: #69ffff;
 }
 
-@media(max-width: 1700px){
-    .floats{
-     padding: 50px 0px 0px 70%;
-    }
-}
+@media (max-width: 560px) {
+    /* Smartphones, Android phones, landscape ihone*/
+   #part1{
+    background-image: url(./Backgrounds/mobile_banner.png);
+    background-repeat: no-repeat;
+    z-index:3;
+   }
 
-@media(max-width: 1500px){
- .floats {
-  padding: 50px 0px 0px 66%;
- }
-}
+   #part2 {
+    background-size: cover;
+    margin-top:-6%;
+    z-index:2;
+   }
 
-@media(max-width: 1300px){
- .floats{
-  padding: 50px 50px 0px 60.5%;
- }
-}
-
-@media(max-width: 1366px){
-
-    #part1{
-        background-size:cover;
-        background-repeat: no-repeat;
-        width:1343px;
-        height:768px;
-      }
-
-    #part2{
-        background-size:cover;
-        background-repeat: no-repeat;
-        width:1343px;
-        height: 1005px;
-      }
-      
-    #part3{
-        background-size:cover;
-        background-repeat: no-repeat;
-        width:1343px;
-        height: 780px;
-      }
-
-      #divider1{
-        width:1343px;
-        margin-top:730px;
-      }
-
-      #divider2{
-        width:1343px;
-      }
-
-      .options{
-        height: 450px;
-        width:  400px;
-    }
-      
-    #works{
-      display:grid;
-     grid-template-columns: repeat(3,400px);
-     grid-gap:30px;
-     padding: 70px 10px 100px 0px;
-     transition:0.5s;
-     }
-
-     .withLine{
-        font-size: 20px;
-    }
-
-    .line{
-        padding:0px 20px 0px 20px;
-        font-size: 22px;
-    }
-
-    .floats{
-     padding: 50px 0px 0px 73%;
-    }
+   #part3 {
+    background-image: url(./Backgrounds/Footer_Mobile.png);
+    background-size:cover;
+    z-index:1;
+    width: 100%;
+    height:150%;
+   }
 
     .headers{
-        font-size:45px;
-        text-align: center;
-        padding: 140px 0px 30px 0px;
-        letter-spacing: 30px;
-    }
-    
-    .headers1{
-        font-size:35px;
-        padding: 100px 0px 0px 0px;
-    }
-    
-    .sets{
-        padding:20px 0px 0px 0px;
-        transition:0.5s;
+        padding: 15% 0px 0% 0px;
+        font-size:clamp(10px, 7.5vw, 60px);
+        letter-spacing: clamp(5px, 3vw, 2vmax);
     }
 
-    #footer{
-        margin:180px 400px 0px 435px ;
+    .headers1{
+        padding: 150% 0px 0% 0px;
+        font-size:clamp(10px, 7.5vw, 60px);
+        letter-spacing: clamp(5px, 3vw, 2vmax);
     }
-    
+
+   .sets{
+    font-size:clamp(5px, 5vw, 25px);
+    text-align:left;
+    padding: 50% 0% 0% 20%;
+   }
+
+   #divider1{
+    margin-top:173%;
+   }
+
+   #divider2{
+    margin-top:30%;
+   }
+
+   .floats{
+   justify-self: center;
+   margin:5% 0vw 0px 0px;
+   z-index:4;
+   }
+
+   #works {
+    grid-template-rows: repeat(3,35%);
+    grid-template-columns: repeat(1,75%);
+    padding-top:8% 
+   }
+
+   #art {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    }
+
     .info{
-        color: white;
-        font-family: 'Gotham Black', sans-serif;
-        font-size:20px;
-        margin:20px 0px 25px 60px;
+        margin-top:8%;
+        font-size:clamp(7px, 3vw, 2.5vmax);
     }
     
     .link{
-        font-size:20px;
-    }
-    
-}
-
-@media(max-width: 1300px){
-    .floats{
-     padding: 50px 50px 0px 70%;
-    }
-   }
-   
-@media(max-width: 1250px){
-    .floats{
-     padding: 50px 50px 0px 65%;
-    }
-   }
-   
-@media(max-width: 1150px){
-       .floats{
-        padding: 50px 50px 0px 65%;
-       }
-   }
-   
-@media(max-width: 1100px){
-       .floats{
-        padding: 50px 50px 0px 65%;
-       }
-   }
-   
-@media(max-width: 1050px){
-       .floats{
-        padding: 50px 50px 0px 63%;
-       }
-   }
-   
-@media(max-width: 1000px){
-       .floats{
-        padding: 50px 50px 0px 61%;
-       }
-   }
-   
-@media(max-width: 910px){
-       .floats{
-        padding: 50px 50px 0px 59%;
-       }
-   }
-   
-@media(max-width: 900px){
-       .floats{
-        padding: 50px 50px 0px 59%;
-       }
-   }
-   
-@media(max-width: 880px){
-       .floats{
-        padding: 50px 50px 0px 53%;
-       }
-   }
-
- /*Tablet response*/
-@media (max-width: 768px) {
-    /* With line*/
-
-   .headers, .headers1{
-    font-size: 25px;
-    padding:70px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-   
-   #part1{
-    width: 746px;
-    height: 400px;
-    object-fit:contain;
-   }
-
-   #part3{
-  
-    width: 746px;
-    height:400px;
-    object-fit:contain;
-   }
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .floats{
-    padding: 30px 0px 0px 65%;
-   }
-   
-   #divider1{
-    width:746px;
-    margin-top:382px;
-   }
-
-   #divider2{
-    width:746px;
-    margin-top:79px;
-   }
-   
-   #part2{
-    width:746px;
-    height:480px;
-    object-fit:contain;
-   }
-
-   .options{
-    height: 230px;
-    width:  175px;
-   }
-
-   #works{
-    grid-template-columns: repeat(3,170px);
-    padding:30px 20px 0px 0px;
-   }
-
-   .sets{
-    font-size:15px;
-    padding-top:5px;
-   }
-
-   #footer{
-    margin:50px 50px 0px 65px ;
-   }
-
-   .info{
-    font-size:13px;
-    margin:15px 0px 10px 198px;
-   }
-
-   .link{
-    font-size:13px;
-   }
-}
-@media(max-width: 720px){
-    .floats{
-     padding: 30px 50px 0px 60%;
-    }
-}
-
-@media(max-width: 700px){
-    .floats{
-     padding: 30px 50px 0px 56%;
-    }
-}
-
-@media(max-width: 660px){
-    .floats{
-     padding: 30px 50px 0px 53%;
-    }
-}
-
-@media(max-width: 620px){
-    .floats{
-     padding: 30px 50px 0px 50%;
-    }
-}
-
-@media(max-width: 580px){
-    .floats{
-     padding: 30px 50px 0px 45%;
-    }
-}
-
-@media(max-width: 550px){
-    .floats{
-     padding: 30px 50px 0px 45%;
-    }
-}
-
-@media(max-width: 520px){
-    .floats{
-     padding: 30px 50px 0px 40%;
-    }
-}
-
-@media (max-width: 500px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-image: url('../Backgrounds/neon_mobile.png');
-    width:470px;
-    height:888px;
-    object-position:top right;
-   }
-
-   #part2 {
-    width:470px;
-    height:1190px;
-    object-fit: cover;
-   }
-
-   #part3 {
-    background-image: url('../Backgrounds/Footer_mobile.png');
-    width: 470px;
-    height:900px;
-   }
-
-   #divider1{
-    width:470px;
-    height:50px;
-    object-fit: cover;
-    margin-top:80px;
-   }
-
-   #divider2{
-    width:470px;
-    height:50px;
-    object-fit: cover;
-    margin-top:120px;
-   }
-
-   .floats{
-    padding: 30px 10% 0px 27%;
-    transition:0.5s;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-   
-   #art1, #art2, #art3,  #art4, #art5, #art6, #art7, #art8, #art9{
-    height:180px;
-    width:180px;
-   }
-
-   #works {
-    grid-template-rows: repeat(5,120px);
-    grid-template-columns: repeat(2,110px);
-    padding:35px 0px 0px 0px;
-   }
-
-   .headers1{
-    font-size: 25px;
-    padding:320px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-
-   .headers{
-    font-size: 25px;
-    padding:750px 0px 0px 0px;
-    letter-spacing: 10px;
-   }
-
-   .info{
-    margin:15px 0px 10px 66px;
-   }
-
-   #footer{
-    margin:280px 50px 0px 65px ;
-   }
-}
-
-@media (max-width: 415px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width:415px;
-    height:700px;
-   }
-
-   #part2 {
-    width:415px;
-    height:1050px;
-   }
-
-   #part3 {
-    background-size: cover;
-    width:415px;
-    height:715px;
-   }
-
-   #divider1{
-    width:415px;
-    height:45px;
-    object-fit: cover;
-    margin-top:25px;
-   }
-
-   #divider2{
-    width:415px;
-    height:45px;
-    object-fit: cover;
-    margin-top:35px;
-   }
-
-   .floats{
-    padding: 30px 10% 0px 25%;
-    position:fixed;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #art1, #art2, #art3,  #art4, #art5, #art6, #art7, #art8, #art9{
-    height:150px;
-    width:150px;
-   }
-
-   #works {
-    grid-template-rows: repeat(5,100px);
-    grid-template-columns: repeat(2,100px);
-    padding:0px 10px 0px 0px;
-   }
-
-   .headers{
-    font-size: 25px;
-    text-align:center;
-    padding-top:590px;
-    padding-left:10px;
-    letter-spacing: 15px;
-   }
-
-   .headers2{
-    font-size: 25px;
-    text-align:center;
-    padding-top:0px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 20px;
-   }
-
-   #footer{
-    margin-top:285px;
-   }
-
-  .x{
-    justify-self:right;
-    margin:14px 13px 0px 0px;
-    width:40px;
-    height:40px;
-   }
-
-   .inner{
-    padding-top:5px;
-   }
-
-   .art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9 {
-    position:fixed;
-    padding: 20% 5% 3% 5%;
-}
-}
-
-@media (max-width: 395px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-size:contain;
-    background-repeat: no-repeat;
-    width:395px;
-    height:700px;
-   }
-
-   #part2 {
-    width:395px;
-    height:1050px;
-   }
-
-   #part3 {
-    width:395px;
-    height:715px;
-   }
-
-   #divider1{
-    width:395px;
-    height:45px;
-    object-fit: cover;
-    padding-top:90px;
-   }
-
-   #divider2{
-    width:395px;
-    height:45px;
-    object-fit: cover;
-    margin-top:35px;
-   }
-
-   .floats{
-    padding: 30px 10% 0px 24%;
-    position:fixed;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #art1, #art2, #art3,  #art4, #art5, #art6, #art7, #art8, #art9{
-    height:150px;
-    width:150px;
-   }
-
-   #works {
-    grid-template-rows: repeat(5,100px);
-    grid-template-columns: repeat(2,100px);
-    padding:0px 10px 0px 0px;
-   }
-
-   .headers{
-    font-size: 25px;
-    text-align:center;
-    padding-top:590px;
-    padding-left:10px;
-    letter-spacing: 15px;
-   }
-
-   .headers2{
-    font-size: 25px;
-    text-align:center;
-    padding-top:0px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 20px;
-   }
-
-   #footer{
-    margin-top:275px;
-   }
-
-  .x{
-    justify-self:right;
-    margin:14px 13px 0px 0px;
-    width:40px;
-    height:40px;
-   }
-
-   .inner{
-    padding-top:5px;
-   }
-
-   .art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9 {
-    position:fixed;
-    padding: 20% 5% 3% 5%;
-}
-}
-
-
-    /*Mobile response*/
-@media (max-width: 500px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-image: url(./Backgrounds/mobile_banner.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width:500px;
-    height:888px;
-    
-   }
-
-   #part2 {
-    width:500px;
-    height:1100px;
-    object-fit: cover;
-   }
-
-   #part3 {
-    background-image: url(./Backgrounds/Footer_Mobile.png);
-    width: 500px;
-    height:900px;
-  
-   }
-
-   #divider1{
-    width:500px;
-    height:45px;
-    object-fit: cover;
-    margin-top:865px;
-   }
-
-   #divider2{
-    width:500px;
-    height:45px;
-    object-fit: cover;
-    margin-top:65px;
-   }
-
-   .floats{
-    padding: 30px 10% 0px 25%;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #works {
-    grid-template-rows: repeat(3,270px);
-    grid-template-columns: repeat(1,400px);
-    padding:50px 0px 0px 0px;
-   }
-
-   #art {
-    display:grid;
-    grid-template-columns: repeat(2,200px);
+        font-size:clamp(7px, 3vw, 2.5vmax);
     }
 
-   .sets {
-    text-align:left;
-    font-size:25px;
-    padding:90px 100px 0px 60px
-   }
-
-   .headers{
-    font-size: 25px;
-    padding:80px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-   .headers1{
-    font-size: 25px;
-    padding:80px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 66px;
-   }
-}
-
-@media (max-width: 480px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-image: url(./Backgrounds/mobile_banner.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width:500px;
-    height:888px;
-    
-   }
-
-   #part2 {
-    width:500px;
-    height:1100px;
-    object-fit: cover;
-   }
-
-   #part3 {
-    background-image: url(./Backgrounds/Footer_Mobile.png);
-    width: 500px;
-    height:900px;
-  
-   }
-
-   #divider1{
-    width:500px;
-    height:45px;
-    object-fit: cover;
-    margin-top:865px;
-   }
-
-   #divider2{
-    width:500px;
-    height:45px;
-    object-fit: cover;
-    margin-top:72px;
-   }
-
-   .floats{
-    padding: 30px 10% 0px 30%;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #works {
-    grid-template-rows: repeat(3,270px);
-    grid-template-columns: repeat(1,400px);
-    padding:50px 0px 0px 0px;
-   }
-
-   #art {
-    display:grid;
-    grid-template-columns: repeat(2,200px);
+    .line, .withLine{
+        font-size:clamp(10px, 4vw, 4vmax);
     }
-
-   .sets {
-    text-align:left;
-    font-size:25px;
-    padding:90px 100px 0px 60px
-   }
-
-   .headers1{
-    font-size: 25px;
-    padding:320px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 66px;
-   }
 }
-
-
-@media (max-width: 415px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 415px;
-    height:720px;
-   }
-
-   #part2 {
-    width:415px;
-    height:1100px;
-   }
-
-   #part3 {
-    width:415px;
-    height:900px;
-  
-   }
-
-   #divider1{
-    width:415px;
-    height:45px;
-    object-fit: cover;
-    margin-top:700px;
-   }
-
-   #divider2{
-    width:415px;
-    height:45px;
-    object-fit: cover;
-    margin-top:72px;
-   }
-
-   .floats{
-    padding: 30px 10% 0px 22%;
-    position:fixed;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #works {
-    grid-template-rows: repeat(3,270px);
-    grid-template-columns: repeat(1,355px);
-    padding:50px 0px 0px 5px;
-   }
-
-   #art {
-    display:grid;
-    grid-template-columns: repeat(2,165px);
-    }
-
-   .sets {
-    text-align:left;
-    font-size:25px;
-    padding:90px 100px 0px 60px
-   }
-
-   .headers{
-    font-size: 25px;
-    text-align:center;
-    padding-left:10px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 20px;
-   }
-
-   #footer{
-    margin-top: 55px;
-   }
-}
-
-@media (max-width: 395px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width:395px;
-    height:712px;
-   }
-
-   #part2 {
-    width:395px;
-    height:1100px;
-   }
-
-   #part3 {
-    width:395px;
-    height:720px;
-  
-   }
-
-   #divider1{
-    width:395px;
-    height:45px;
-    object-fit: cover;
-    margin-top:690px;
-   }
-
-   #divider2{
-    width:395px;
-    height:45px;
-    object-fit: cover;
-    margin-top:72px;
-   }
-
-   .floats{
-    padding: 30px 10% 0px 21%;
-    position:fixed;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #works {
-    grid-template-rows: repeat(3,270px);
-    grid-template-columns: repeat(1,355px);
-    padding:50px 0px 0px 5px;
-   }
-
-   #art {
-    display:grid;
-    grid-template-columns: repeat(2,165px);
-    }
-
-   .sets {
-    text-align:left;
-    font-size:25px;
-    padding:90px 100px 0px 60px
-   }
-
-   .headers{
-    font-size: 25px;
-    text-align:center;
-    padding-left:10px;
-    letter-spacing: 15px;
-   }
-
-   .headers1{
-    font-size: 25px;
-    text-align:center;
-    padding-top:220px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 20px;
-   }
- 
-}
-
-@media (max-height: 395px) and (orientation: landscape) {
-
-   #part1{
-    background-size:contain;
-    background-repeat: no-repeat;
-    width:800px;
-    height:430px;
-   }
-
-   #part2 {
-    width:800px;
-    height:520px;
-   }
-
-   #part3 {
-    background-size:contain;
-    width:800px;
-    height:453px
-  
-   }
-
-   #divider1{
-    width:800px;
-    height:45px;
-    object-fit: cover;
-    margin-top:410px;
-   }
-
-   #divider2{
-    width:800px;
-    height:45px;
-    object-fit: cover;
-    margin-top:75px;
-   }
-
-   .floats{
-    padding: 30px 0% 0px 67%;
-    position:fixed;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #works {
-    grid-template-rows: 1;
-    grid-template-columns: repeat(3,230px);
-    padding:20px 0px 0px 40px;
-   }
-
-   #art {
-    display:grid;
-    grid-template-columns: 1;
-    }
-
-   .sets {
-    text-align:left;
-    font-size:15px;
-    padding:20px 0px 0px 40px
-   }
-
-   .headers{
-    font-size: 25px;
-    text-align:center;
-    padding-top:70px;
-    letter-spacing: 15px;
-   }
-
-   .headers1{
-    letter-spacing: 15px;
-    font-size: 25px;
-    padding: 50px 0px 0px 20px;
-    padding-bottom:0px;
-    padding-top:50px;
-
-   }
-   .info{
-    font-size: 13px;
-    margin:15px 0px 10px 270px;
-   }
-
-   .link{
-    font-size: 13px;
-   }
-
-   #footer{
-    margin:90px 20px 0px 20px;
-   }
-}
-
-
-@media (max-width: 320px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-size:contain;
-    background-repeat: no-repeat;
-    width:330px;
-    height:586px;
-   }
-
-   #part2 {
-    width:330px;
-    height:1100px;
-   }
-
-   #part3 {
-    width:330px;
-    height:900px;
-  
-   }
-
-   #divider1{
-    width:330px;
-    height:45px;
-    object-fit: cover;
-    margin-top:560px;
-   }
-
-   #divider2{
-    width:330px;
-    height:45px;
-    object-fit: cover;
-    margin-top:72px;
-   }
-
-   .floats{
-    padding: 30px 10% 0px 15%;
-    position:fixed;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  180px;
-   }
-
-   #works {
-    grid-template-rows: repeat(3,270px);
-    grid-template-columns: repeat(1,300px);
-    padding:50px 0px 0px 20px;
-   }
-
-   #art {
-    display:grid;
-    grid-template-columns: repeat(2,135px);
-    }
-
-   .sets {
-    text-align:left;
-    font-size:18px;
-    padding:90px 100px 0px 60px
-   }
-
-   .headers{
-    font-size: 20px;
-    text-align:center;
-    padding-left:15px;
-    letter-spacing: 15px;
-   }
-
-   .headers1{
-    letter-spacing: 15px;
-    font-size: 20px;
-    padding:50px 0px 0px 25px;
-   }
-   .info{
-    font-size: 10px;
-    margin:15px 0px 10px 45px;
-   }
-
-   .link{
-    font-size: 10px;
-   }
-
-   #footer{
-    margin:340px 20px 0px 20px;
-   }
-}
-

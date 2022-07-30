@@ -230,31 +230,31 @@ body{
     #part1{
         background-size:cover;
         background-repeat: no-repeat;
-        width:1366px;
+        width:1343px;
         height:768px;
       }
 
     #part2{
         background-size:cover;
         background-repeat: no-repeat;
-        width:1366px;
+        width:1343px;
         height: 1430px;
       }
       
     #part3{
         background-size:contain;
         background-repeat: no-repeat;
-        width:1366px;
+        width:1343px;
         height: 780px;
       }
 
       #divider1{
-        width:1366px;
+        width:1343px;
         margin-top:30px;
       }
 
       #divider2{
-        width:1366px;
+        width:1343px;
         margin-top:320px;
       }
 
@@ -336,14 +336,14 @@ body{
    }
    
    #part1{
-    width: 768px;
+    width: 746px;
     height: 400px;
     object-fit:contain;
    }
 
    #part3{
   
-    width: 768px;
+    width: 746px;
     height:440px;
     object-fit:contain;
    }
@@ -362,17 +362,17 @@ body{
    }
    
    #divider1{
-    width:768px;
+    width:746px;
    padding-top: 50px;
    }
 
    #divider2{
-    width:768px;
+    width:746px;
     margin-top:170px;
    }
    
    #part2{
-    width:768px;
+    width:746px;
     height:875px;
     object-fit:contain;
    }
@@ -440,33 +440,33 @@ body{
 
    #part1{
     background-image: url('../Backgrounds/graphic_mobile_copy.png');
-    width:500px;
+    width:480px;
     height:888px;
     object-position:top right;
    }
 
    #part2 {
-    width:500px;
+    width:480px;
     height:1180px;
     object-fit: cover;
    }
 
    #part3 {
     background-image: url('../Backgrounds/Footer_mobile.png');
-    width: 500px;
+    width: 480px;
     height:900px;
   
    }
 
    #divider1{
-    width:500px;
+    width:480px;
     height:50px;
     object-fit: cover;
     margin-top:70px;
    }
 
    #divider2{
-    width:500px;
+    width:480px;
     height:50px;
     object-fit: cover;
     margin-top:100px;
