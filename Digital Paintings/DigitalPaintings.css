@@ -12,6 +12,11 @@
     src: local('Gotham Black'), url('https://fonts.cdnfonts.com/s/14898/Gotham-Black.woff') format('woff');
 }
 
+html{
+    overflow-y: hidden;
+    background: #1f1f36;
+}
+
 ::-webkit-scrollbar{
     width:0.5vmax;
 }
@@ -30,8 +35,25 @@
     scroll-behavior:smooth;
 }
 
+#loader{
+    display:grid;
+   background: #1f1f36;
+    height:100%;
+    width:100%;
+    z-index:10;
+    position:fixed;
+   }
+
+#load {
+    justify-self: center;
+    align-self: center;
+    object-fit: contain;
+    width:20%;
+    height:20%;
+    margin-top:-5%;
+}
+
 body{
-    background-color: rgb(28, 4, 23);
     display:grid;
 }
 

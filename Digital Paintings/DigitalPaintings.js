@@ -1,3 +1,8 @@
+$(window).on("load" , function(){
+  $("html").css('overflow-y','visible');
+  $("#loader").fadeOut("slow");
+});
+
 $(document).ready(function(){
   var artworks = ['art1','art2','art3','art4','art5','art6','art7','art8','art9','x']
   parts = ['part1', 'part2', 'part3']
