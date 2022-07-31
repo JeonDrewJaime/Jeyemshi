@@ -31,14 +31,21 @@
 }
 
 #loader{
-background: #1f1f36 url("./Loader.gif");
-background-position: center;
-background-repeat: no-repeat;
- height:100vh;
+ display:grid;
+background: #1f1f36;
+ height:100%;
  width:100%;
- margin-top:-5%;
  z-index:10;
+ position:fixed;
+}
 
+#load{
+  justify-self: center;
+  align-self: center;
+  object-fit: contain;
+  width:20%;
+  height:20%;
+  margin-top:-5%;
 }
 body{
     background-color: rgb(59, 0, 47);

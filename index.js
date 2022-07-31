@@ -1,5 +1,5 @@
-var loader = document.getElementById("loader");
 
-window.addEventListener("load" , function(){
-   loader.style.display = "none";
+
+$(window).on("load" , function(){
+   $("#loader").fadeOut("slow");
 });
