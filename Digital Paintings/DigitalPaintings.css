@@ -48,7 +48,6 @@ body{
   display:grid
 }
 
-
 .headers{
     padding:38% 0% 50% 0%;
     color: white;
@@ -99,13 +98,12 @@ body{
     background-color: black;
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-top: -30%;
+    margin-top: -17%;
     width:100%;
-    height:130%;
+    height:115%;
     transition:0.5s;
     z-index: 2;
 }
-
 
 .headers1{
     color: white;
@@ -118,7 +116,7 @@ body{
 }
 
 #works{
-    margin: 5% 0% -7% 0%;
+    margin: -8% 0% -7% 0%;
     display:grid;
     justify-content: center;
     align-content: center;
@@ -189,7 +187,7 @@ body{
 .art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9 {
     position:fixed;
     justify-self: center;
-    margin:4vw 5% 4vw 5%;
+    margin:4vmax 5% 4vmax 5%;
     width:90%;
     height:85%;
     object-fit:contain;
@@ -257,9 +255,9 @@ body{
 
    #part2 {
     background-size: 100%;
-    margin-top: -50%;
+    margin-top: -20%;
     width:100%;
-    height:120%;
+    height:108%;
    }
 
    .floats{
@@ -285,7 +283,7 @@ body{
    }
    
    #works {
-    margin: 30% 0% -2% 0%;
+    margin: -3% 0% -2% 0%;
     display:grid;
     grid-template-columns: repeat(2,38%);
     grid-template-rows: repeat(5,15%);
@@ -305,6 +303,14 @@ body{
     padding-bottom: 16vw;
    }
 
+   .inner{
+    font-size: 3vmax;
+    transition:0.5s;
+}
+   .x{
+    height:4vmax;
+    width: 4vmax;
+}
    .headers1{
     padding: 140% 0px 0% 0px;
     font-size:clamp(10px, 6vw, 60px);

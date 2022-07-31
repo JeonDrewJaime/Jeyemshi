@@ -30,6 +30,16 @@
     scroll-behavior:smooth;
 }
 
+#loader{
+background: #1f1f36 url("./Loader.gif");
+background-position: center;
+background-repeat: no-repeat;
+ height:100vh;
+ width:100%;
+ margin-top:-5%;
+ z-index:10;
+
+}
 body{
     background-color: rgb(59, 0, 47);
     display:grid;
@@ -263,6 +273,6 @@ body{
     }
 
     .line, .withLine{
-        font-size:clamp(10px, 4vw, 4vmax);
+        font-size:clamp(3px, 4vw, 4vmax);
     }
 }
