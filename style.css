@@ -169,7 +169,7 @@ body{
 .info{
     color: white;
     font-family: 'Gotham Black', sans-serif;
-    font-size:clamp(5px, 1.5vw, 1.5vmax);
+    font-size:clamp(5px, 1.5vw, 2vmax);
     text-align: left;
     margin-top:5%;
     margin-left:2vw;
@@ -178,7 +178,7 @@ body{
 .link{
     color: white;
     font-family: 'Gotham Light', sans-serif;
-    font-size:clamp(5px, 1.6vw, 1.5vmax);
+    font-size:clamp(5px, 1.6vw, 2vmax);
     text-decoration: none;
     transition: 0.5s;
 }
@@ -187,9 +187,10 @@ body{
     color: #69ffff;
 }
 
+/* Smartphones, Android phones, landscape ihone*/
 @media (max-width: 560px) {
-    /* Smartphones, Android phones, landscape ihone*/
-   #part1{
+
+   #part1 {
     background-image: url(./Backgrounds/mobile_banner.png);
     background-repeat: no-repeat;
     z-index:3;
@@ -211,14 +212,14 @@ body{
 
     .headers{
         padding: 15% 0px 0% 0px;
-        font-size:clamp(10px, 7.5vw, 60px);
+        font-size:clamp(10px, 6vw, 60px);
         letter-spacing: clamp(5px, 3vw, 2vmax);
     }
 
     .headers1{
-        padding: 150% 0px 0% 0px;
-        font-size:clamp(10px, 7.5vw, 60px);
-        letter-spacing: clamp(5px, 3vw, 2vmax);
+        padding: 140% 0px 0% 0px;
+        font-size:clamp(10px, 6vw, 60px);
+        letter-spacing: clamp(5px, 3.5vw, 2vmax);
     }
 
    .sets{
@@ -253,12 +254,12 @@ body{
     }
 
     .info{
-        margin-top:8%;
-        font-size:clamp(7px, 3vw, 2.5vmax);
+        margin-top:7%;
+        font-size:clamp(2px, 3vw, 3vmax);
     }
     
     .link{
-        font-size:clamp(7px, 3vw, 2.5vmax);
+        font-size:clamp(2px, 3vw, 3vmax);
     }
 
     .line, .withLine{
