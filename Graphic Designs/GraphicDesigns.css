@@ -1,7 +1,24 @@
-@import url('http://fonts.cdnfonts.com/css/gotham');
+@font-face {
+    font-family: 'Gotham Light';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gotham Light'), url('https://fonts.cdnfonts.com/s/14898/Gotham-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gotham Black'), url('https://fonts.cdnfonts.com/s/14898/Gotham-Black.woff') format('woff');
+}
+
+html{
+    overflow-y: hidden;
+    background: #1f1f36;
+}
 
 ::-webkit-scrollbar{
-    width:20px;
+    width:0.5vmax;
 }
 
 ::-webkit-scrollbar-track{
@@ -18,52 +35,80 @@
     scroll-behavior:smooth;
 }
 
-body{
-    background-color: rgb(28, 4, 23);
+#loader{
     display:grid;
-    justify-content:center;
-    height: 100%;
+   background: #1f1f36;
+    height:100%;
+    width:100%;
+    z-index:10;
+    position:fixed;
+   }
+
+#load {
+    justify-self: center;
+    align-self: center;
+    object-fit: contain;
+    width:20%;
+    height:20%;
+    margin-top:-5%;
+}
+
+body{
+    display:grid;
 }
 
 #part1 {
-   background-image: url('../Backgrounds/TP1_VILLABER_dark.png');
-  background-size:cover;
-  background-position: 50% 22.5%;
+  background-image: url('../Backgrounds/TP1_VILLABER_dark.png');
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
   z-index:3;
-  width:1900px;
-  height:1000px;
+  width:100%;
+  height:95%;
+  margin-top: -8%;
   transition:0.5s;
+  display:grid
+}
+
+.headers{
+    padding:34% 0% 50% 0%;
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+    font-size:clamp(10px, 3vw, 3vmax);
+    position:relative;
+    justify-self: center;
+    align-self: center;
+    letter-spacing: clamp(2px, 2vw, 2vmax);
 }
 
 .line{
-    padding:0px 30px 0px 30px;
+    padding:0px 2vw 0px 2vw;
     color: white;
     font-family: 'Gotham Light', sans-serif;
     pointer-events:none;
-    font-size: 29px;
-
+    font-size:clamp(18px, 2vw, 1.5vmax);
 }
 
-#divider1{
-   padding:150px 0px 0px 0px;
-   width:1900px;
-   position:absolute;
-
+#divider1 {
+    margin: 1% 0px 0px 0px;
+    width:100%;
+    position:relative;
+    object-fit: contain;
 }
 
 .floats{
-    padding: 50px 50px 0px 75%;
-    position:fixed;
-    z-index: 4;
+    margin:2vw 3vw 0px 0px;
     transition: 0.5s;
+    position:fixed;
+    justify-self: right;
+    z-index: 5;
 }
 
 .withLine{
     color: white;
     font-family: 'Gotham Light', sans-serif;
     text-decoration: none;
-    font-size: 27px;
+    font-size:clamp(20px, 2vw, 1.5vmax);
     transition: 0.5s;
 }
 
@@ -74,43 +119,37 @@ body{
 #part2{
     background-color: black;
     background-repeat: no-repeat;
-    width:1900px;
-    height:2020px;
+    background-size: 100%;
+    margin-top: -12%;
+    width:100%;
+    height:110%;
     transition:0.5s;
     z-index: 2;
 }
 
-.headers{
+.headers1{
     color: white;
     font-family: 'Gotham Black', sans-serif;
-    font-size:50px;
+    font-size:clamp(15px, 3vw, 3vmax);
+    position:relative;
     text-align: center;
-    padding: 450px 0px 30px 50px;
-    letter-spacing: 30px;
-}
-
-.headers2{
-    color: white;
-    font-family: 'Gotham Black', sans-serif;
-    font-size:50px;
-    text-align: center;
-    padding: 180px 0px 30px 50px;
-    letter-spacing: 30px;
+    padding: 19vw 0px 1vw 1.5vw;
+    letter-spacing: clamp(2px, 2vw, 2vmax);
 }
 
 #works{
+    margin: 1% 0% 0% 0%;
     display:grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(3,500px);
-    grid-template-rows: repeat(3,500px);
-    grid-gap:80px;
-    margin: 200px 0px 0px 0px;
+    grid-template-columns: repeat(3,27%);
+    grid-template-rows: repeat(3,27%);
+    grid-gap:3%;
 }
 
-#art1, #art2, #art3,  #art4, #art5, #art6, #art7, #art8, #art9{
-    width:500px;
-    height:500px;
+#art1, #art2, #art3,  #art4, #art5, #art6 , #art7, #art8, #art9 {
+    width:100%;
+    height:100%;
     object-fit:cover;
     object-position: top;
 }
@@ -125,53 +164,55 @@ body{
 }
 
 #divider2{
-    margin: 445px 0px 0px 0px;
-    width:1900px;
+    margin-top:72%;
+    width:100%;
     position:absolute;
 }
 
 #part3{
     background-image: url('../Backgrounds/Footer.png');
-    background-size:cover;
     background-repeat: no-repeat;
-    z-index:1;
-    width:1900px;
-    height:1000px;
-    transition:0.5s;
+    margin-top: -5%;
+    padding-top:5%;
+    background-size: 100%;
+    width:100%;
+    height:100%;
 }
 
 #footer{
-    margin:230px 500px 0px 500px ;
+    justify-self: center;
+    display:grid;
+    justify-content: center;
+    padding-bottom: 13vw;
 }
 
 .info{
     color: white;
     font-family: 'Gotham Black', sans-serif;
-    font-size:27px;
-    margin:20px 0px 25px 220px;
-}
+    font-size:clamp(5px, 1.5vw, 2vmax);
+    text-align: left;
+    margin-top:5%;
+    margin-left:2vw;}
 
 .link{
     color: white;
     font-family: 'Gotham Light', sans-serif;
-    font-size:27px;
+    font-size:clamp(5px, 1.6vw, 2vmax);
     text-decoration: none;
     transition: 0.5s;
-    z-index: 1;
 }
 
 .link:hover{
     color: #69ffff;
 }
 
-
-.art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9{
+.art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9 {
     position:fixed;
-    justify-self: right;
-    padding: 5% 4% 3% 5%;
-     width:90%;
-     height:80%;
-     object-fit:contain;
+    justify-self: center;
+    margin:4vmax 5% 4vmax 5%;
+    width:90%;
+    height:85%;
+    object-fit:contain;
 }
 
 #black{
@@ -183,23 +224,23 @@ body{
 
 .x{
     background-color: azure;
-    z-index:5;
-    margin:20px 20px 0px 0px;
+    display:grid;
+    z-index:6;
+    margin:1vmax 1vmax 0px 0px;
     border-radius: 50%;
     justify-self:right;
-    height:50px;
-    width: 50px;
+    height:3vmax;
+    width: 3vmax;
     position:fixed;
-    z-index:6;
     transition:0.3s;
 }
 
 .inner{
-    padding-top:8px;
+    justify-self: center;
+    align-self: center;
     color: black;
-    text-align:center;
     font-family: 'Gotham Light', sans-serif;
-    font-size: 30px;
+    font-size: 2vmax;
     transition:0.5s;
 }
 
@@ -212,627 +253,87 @@ body{
     color: rgb(202, 10, 177);
 }
 
-/*Desktop response*/
-@media(max-width: 1700px){
-    .floats{
-     padding: 50px 0px 0px 70%;
+/* Smartphones, Android phones, landscape ihone */
+@media (max-width: 500px) {
+
+   .floats{
+        justify-self: center;
+        margin:5% 0vw 0px 0px;
+        z-index:4;
+        }
+
+   #part1{
+    margin-top: -8%;
     }
-}
-
-@media(max-width: 1500px){
- .floats{
-  padding: 50px 0px 0px 66%;
- }
-}
-
-@media(max-width: 1366px){
-
-    #part1{
-        background-size:cover;
-        background-repeat: no-repeat;
-        width:1343px;
-        height:768px;
-      }
-
-    #part2{
-        background-size:cover;
-        background-repeat: no-repeat;
-        width:1343px;
-        height: 1430px;
-      }
-      
-    #part3{
-        background-size:contain;
-        background-repeat: no-repeat;
-        width:1343px;
-        height: 780px;
-      }
-
-      #divider1{
-        width:1343px;
-        margin-top:30px;
-      }
-
-      #divider2{
-        width:1343px;
-        margin-top:320px;
-      }
-
-      .options{
-        height: 450px;
-        width:  400px;
-    }
-      
-    #works{
-        grid-template-columns: repeat(3,300px);
-        grid-template-rows: repeat(3,300px);
-        grid-gap:90px;
-        margin: 140px 40px 0px 0px;
-    }
-    
-    #art1, #art2, #art3,  #art4, #art5, #art6 , #art7, #art8, #art9 {
-        width:350px;
-        height:350px;
-    }
-
-     .withLine{
-        font-size: 20px;
-    }
-
-    .line{
-        padding:0px 20px 0px 20px;
-        font-size: 22px;
-    }
-
-    .floats{
-     padding: 50px 0px 0px 73%;
-    }
-
-    .headers{
-        font-size:45px;
-        text-align: center;
-        padding: 330px 0px 30px 0px;
-        letter-spacing: 30px;
-    }
-    
-    .headers2{
-        font-size:35px;
-        padding: 100px 0px 0px 0px;
-    }
-    
-
-    #footer{
-        margin:180px 400px 0px 390px ;
-    }
-    
-    .info{
-        color: white;
-        font-family: 'Gotham Black', sans-serif;
-        font-size:20px;
-        margin:20px 0px 25px 80px;
-    }
-    
-    .link{
-        font-size:20px;
-    }
-    
-}
-
-
-
- /*Tablet response*/
-@media (max-width: 768px) {
 
    .headers{
-    font-size: 25px;
-    padding:180px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
+    text-align: center;
+    padding:165% 0% 30% 2%;
+    font-size:clamp(7px, 4.5vw, 60px);
+    letter-spacing: clamp(5px, 3vw, 2vmax);
+}
 
-   .headers2{
-    font-size: 25px;
-    padding:90px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-   
-   #part1{
-    width: 746px;
-    height: 400px;
-    object-fit:contain;
-   }
-
-   #part3{
-  
-    width: 746px;
-    height:440px;
-    object-fit:contain;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
+   #part2 {
+    background-size: 100%;
+    margin-top: -20%;
+    width:100%;
+    height:108%;
    }
 
    .floats{
-    padding: 30px 0px 0px 60%;
-   }
-   
-   #divider1{
-    width:746px;
-   padding-top: 50px;
-   }
-
-   #divider2{
-    width:746px;
-    margin-top:170px;
-   }
-   
-   #part2{
-    width:746px;
-    height:875px;
-    object-fit:contain;
-   }
-
-   .options{
-    height: 230px;
-    width:  175px;
-   }
-
-   #works{
-    grid-template-columns: repeat(3,150px);
-    margin:90px 40px 0px 0px;
-    grid-template-rows: repeat(3,180px);
-    grid-gap:80px;
-   }
-
-   #art1, #art2, #art3,  #art4, #art5, #art6, #art7, #art8, #art9{
-    height:200px;
-    width:200px;
-   }
-
-   .art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9{
-    padding: 13% 4% 3% 5%;
-   }
-
-   .x{
-    justify-self:right;
-   }
-
-   #footer{
-    margin:70px 50px 0px 65px ;
-   }
-
-   .info{
-    font-size:13px;
-    margin:15px 0px 10px 200px;
-   }
-
-   .link{
-    font-size:13px;
-   }
-}
-
-@media(max-width: 750px){
-    .floats{
-     padding: 30px 50px 0px 60%;
+    justify-self: center;
+    margin:5% 0vw 0px 0px;
+    z-index:4;
     }
-}
 
-@media(max-width: 735px){
-    .floats{
-     padding: 30px 50px 0px 53%;
+    .line, .withLine{
+        font-size:clamp(3px, 4vw, 4vmax);
     }
-}
-
-@media(max-width: 620px){
-    .floats{
-     padding: 30px 50px 0px 43%;
-    }
-}
-
-
-@media (max-width: 500px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-image: url('../Backgrounds/graphic_mobile_copy.png');
-    width:480px;
-    height:888px;
-    object-position:top right;
-   }
-
-   #part2 {
-    width:480px;
-    height:1180px;
-    object-fit: cover;
-   }
 
    #part3 {
     background-image: url('../Backgrounds/Footer_mobile.png');
-    width: 480px;
-    height:900px;
-  
-   }
-
-   #divider1{
-    width:480px;
-    height:50px;
-    object-fit: cover;
-    margin-top:70px;
+    background-size:cover;
+    z-index:1;
+    width: 100%;
+    height:150%;
    }
 
    #divider2{
-    width:480px;
-    height:50px;
-    object-fit: cover;
-    margin-top:100px;
-   }
-
-   .floats{
-    padding: 30px 10% 0px 30%;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
+    margin-top:180%;
    }
    
-   #art1, #art2, #art3,  #art4, #art5, #art6, #art7, #art8, #art9{
-    height:180px;
-    width:180px;
-   }
    #works {
-    grid-template-rows: repeat(5,120px);
-    grid-template-columns: repeat(2,120px);
-    padding:10px 20px 0px 0px;
+    margin: 15% 0% -2% 0%;
+    display:grid;
+    grid-template-columns: repeat(2,40%);
+    grid-template-rows: repeat(5,18%);
+    grid-column-gap:5%;
    }
 
-   .headers1{
-    font-size: 25px;
-    padding:320px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-
-   .headers{
-    font-size: 25px;
-    padding:730px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 66px;
-   }
-
-   #footer{
-    margin:280px 50px 0px 65px ;
-   }
+  .info{
+    margin-top:7%;
+    font-size:clamp(2px, 3vw, 3vmax);
   }
 
-@media (max-width: 415px) {
-    /* Smartphones, Android phones, landscape ihone */
+  .link{
+    font-size:clamp(2px, 3vw, 3vmax);
+  }
 
-   #part1{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width:415px;
-    height:700px;
-   }
-
-   #part2 {
-    width:415px;
-    height:1050px;
-   }
-
-   #part3 {
-    background-size: cover;
-    width:415px;
-    height:715px;
-   }
-
-   #divider1{
-    width:415px;
-    height:45px;
-    object-fit: cover;
-    margin-top:30px;
-   }
-
-   #divider2{
-    width:415px;
-    height:45px;
-    object-fit: cover;
-    margin-top:35px;
-   }
-
-   .floats{
-    padding: 30px 10% 0px 25%;
-    position:fixed;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #art1, #art2, #art3,  #art4, #art5, #art6, #art7, #art8, #art9{
-    height:150px;
-    width:150px;
-   }
-
-   #works {
-    grid-template-rows: repeat(5,100px);
-    grid-template-columns: repeat(2,100px);
-    padding:0px 10px 0px 0px;
-   }
-
-   .headers{
-    font-size: 25px;
-    text-align:center;
-    padding-top:590px;
-    padding-left:10px;
-    letter-spacing: 15px;
-   }
-
-   .headers2{
-    font-size: 25px;
-    text-align:center;
-    padding-top:0px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 30px;
-   }
-
-   #footer{
-    margin-top:285px;
-   }
-
-  .x{
-    justify-self:right;
-    margin:14px 13px 0px 0px;
-    width:40px;
-    height:40px;
+  #footer{
+    padding-bottom: 16vw;
    }
 
    .inner{
-    padding-top:5px;
-   }
-
-   .art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9 {
-    position:fixed;
-    padding: 20% 5% 3% 5%;
+    font-size: 3vmax;
+    transition:0.5s;
 }
+   .x{
+    height:4vmax;
+    width: 4vmax;
 }
-
-@media (max-width: 395px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-size:contain;
-    background-repeat: no-repeat;
-    width:395px;
-    height:700px;
+   .headers1{
+    padding: 140% 0px 0% 0px;
+    font-size:clamp(10px, 6vw, 60px);
+    letter-spacing: clamp(5px, 3.5vw, 2vmax);
    }
-
-   #part2 {
-    width:395px;
-    height:1050px;
-   }
-
-   #part3 {
-    width:395px;
-    height:715px;
-   }
-
-   #divider1{
-    width:395px;
-    height:45px;
-    object-fit: cover;
-    margin-top:28px;
-   }
-
-   #divider2{
-    width:395px;
-    height:45px;
-    object-fit: cover;
-    margin-top:35px;
-   }
-
-   .floats{
-    padding: 30px 10% 0px 24%;
-    position:fixed;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #art1, #art2, #art3,  #art4, #art5, #art6, #art7, #art8, #art9{
-    height:150px;
-    width:150px;
-   }
-
-   #works {
-    grid-template-rows: repeat(5,100px);
-    grid-template-columns: repeat(2,100px);
-    padding:0px 10px 0px 0px;
-   }
-
-   .headers{
-    font-size: 25px;
-    text-align:center;
-    padding-top:590px;
-    padding-left:10px;
-    letter-spacing: 15px;
-   }
-
-   .headers2{
-    font-size: 25px;
-    text-align:center;
-    padding-top:0px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 20px;
-   }
-
-   #footer{
-    margin-top:275px;
-   }
-
-  .x{
-    justify-self:right;
-    margin:14px 13px 0px 0px;
-    width:40px;
-    height:40px;
-   }
-
-   .inner{
-    padding-top:5px;
-   }
-
-   .art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9 {
-    position:fixed;
-    padding: 20% 5% 3% 5%;
 }
-}
-
-@media (max-height: 395px) and (orientation: landscape) {
-
-    #part1{
-     background-size:cover;
-     width:800px;
-     height:500px;
-    }
- 
-    #part2 {
-     width:800px;
-     height:860px;
-    }
- 
-    #part3 {
-     background-size:contain;
-     width:800px;
-     height:453px
-   
-    }
- 
-    #divider1{
-     width:800px;
-     height:45px;
-     object-fit: cover;
-     margin-top:-15px;
-    }
- 
-    #divider2{
-     width:800px;
-     height:45px;
-     object-fit: cover;
-     margin-top:210px;
-    }
- 
-    .floats{
-     padding: 30px 0% 0px 67%;
-     position:fixed;
-    }
- 
-    .withLine{
-     font-size: 15px;
-    }
- 
-    .line {
-     font-size: 15px;
-     padding:0px 10px 0px 10px;
-    }
- 
-    .options{
-     height: 250px;
-     width:  200px;
-    }
-   
-    .headers{
-     font-size: 25px;
-     text-align:center;
-     padding-top:205px;
-     letter-spacing: 15px;
-    }
-
-    #works{
-        grid-template-columns: repeat(3,150px);
-        grid-template-rows: repeat(3,150px);
-        grid-gap:80px;
-        margin: 100px 50px 0px 0px;
-    }
-    
-    #art1, #art2, #art3,  #art4, #art5, #art6 , #art7, #art8, #art9 {
-        width:200px;
-        height:200px;
-    }
-
-    .headers2{
-     letter-spacing: 15px;
-     font-size: 25px;
-     padding: 50px 0px 0px 20px;
-     padding-bottom:0px;
-     padding-top:50px;
- 
-    }
-    .info{
-     font-size: 13px;
-     margin:15px 0px 10px 270px;
-    }
- 
-    .link{
-     font-size: 13px;
-    }
- 
-    #footer{
-     margin:100px 20px 0px 20px;
-    }
-
-    .x{
-        justify-self:right;
-        margin:14px 13px 0px 0px;
-        width:40px;
-        height:40px;
-       }
-    
-       .inner{
-        padding-top:5px;
-       }
- }
-
- 

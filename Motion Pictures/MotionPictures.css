@@ -1,7 +1,24 @@
-@import url('http://fonts.cdnfonts.com/css/gotham');
+@font-face {
+    font-family: 'Gotham Light';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gotham Light'), url('https://fonts.cdnfonts.com/s/14898/Gotham-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gotham Black'), url('https://fonts.cdnfonts.com/s/14898/Gotham-Black.woff') format('woff');
+}
+
+html{
+    overflow-y: hidden;
+    background: #1f1f36;
+}
 
 ::-webkit-scrollbar{
-    width:20px;
+    width:0.5vmax;
 }
 
 ::-webkit-scrollbar-track{
@@ -18,53 +35,70 @@
     scroll-behavior:smooth;
 }
 
+#loader{
+ display:grid;
+background: #1f1f36;
+ height:100%;
+ width:100%;
+ z-index:10;
+ position:fixed;
+}
+
+#load{
+  justify-self: center;
+  align-self: center;
+  object-fit: contain;
+  width:20%;
+  height:20%;
+  margin-top:-5%;
+}
+
 body{
-    background-color: rgb(28, 4, 23);
     display:grid;
-    justify-content:center;
-}
-
-video{
-    object-fit: contain;
-    width:1900px;
-    height:100%;
-}  
-
-#part1{
-  background-color: black;
-  width:1900px;
-  height:800px;
-  transition:0.5s;
-  
-}
-
-.line{
-    padding:0px 30px 0px 30px;
-    color: white;
-    font-family: 'Gotham Light', sans-serif;
-    pointer-events:none;
-    font-size: 29px;
-}
-
-#divider1{
-   padding:755px 0px 0px 0px ;
-   width:1900px;
-   position:absolute;
 }
 
 .floats{
+    margin:2vw 3vw 0px 0px;
     transition: 0.5s;
-    margin:50px 70px 0px 0px;
     position:fixed;
     justify-self: right;
     z-index: 4;
 }
 
-.withLine {
+#part1{
+  background-image: url('./Backgrounds/Jeyemshi_banner_LGBT.png');
+  background-size:100%;
+  background-repeat: no-repeat;
+  width:100%;
+  z-index: 3;
+}
+
+video{
+    width:100%;
+    height:100%
+}
+
+.line{
+    padding:0px 2vw 0px 2vw;
+    color: white;
+    font-family: 'Gotham Light', sans-serif;
+    pointer-events:none;
+    font-size:clamp(18px, 2vw, 1.5vmax);
+}
+
+#divider1{
+   margin: -3% 0px 0px 0px;
+   width:100%;
+   position:relative;
+   object-fit: contain;
+   z-index: 3;
+}
+
+.withLine{
     color: white;
     font-family: 'Gotham Light', sans-serif;
     text-decoration: none;
-    font-size: 27px;
+    font-size:clamp(20px, 2vw, 1.5vmax);
     transition: 0.5s;
 }
 
@@ -72,623 +106,150 @@ video{
     color: rgb(161, 0, 140);
 }
 
-#part2{
+#part2 {
     background-image: url('../Backgrounds/Portfolios_BG.png');
+    background-size:cover;
+    margin-top:-5%;
     background-repeat: no-repeat;
-    width:1900px;
-    height:1000px;
-    transition:0.5s;
+    width:100%;
+    display:grid;
 }
 
-.headers2{
+.headers{
     color: white;
     font-family: 'Gotham Black', sans-serif;
-    font-size:50px;
+    font-size:clamp(10px, 3vw, 3vmax);
+    position:relative;
     text-align: center;
-    padding: 180px 0px 30px 50px;
-    letter-spacing: 30px;
+    padding: 5% 0px 2% 0px;
+    letter-spacing: clamp(2px, 2vw, 2vmax);
+}
+
+.headers1{
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+    font-size:clamp(15px, 3vw, 3vmax);
+    position:relative;
+    text-align: center;
+    padding: 7vw 0px 1vw 1.5vw;
+    letter-spacing: clamp(2px, 2vw, 2vmax);
+}
+
+iframe{
+    padding:13% 0% 35% 5%;
+    height:65%;
+    width:90%;
 }
 
 #divider2{
-    object-fit: contain;
-    width:1900px;
-    padding-top:1770px;
-    position:absolute;
+    margin: -2% 0px 0px 0px;
+    width:100%;
+    position:relative;
 }
 
-#part3{
+#part3 {
     background-image: url('../Backgrounds/Footer.png');
-    background-size:cover;
     background-repeat: no-repeat;
-    width:1900px;
-    height:1000px;
-    transition:0.5s;
+    margin-top: -4%;
+    padding-top:5%;
+    background-size: 100%;
+    width:100%;
+    height:100%;
 }
 
 #footer{
-    margin:230px 500px 0px 500px ;
+    justify-self: center;
+    display:grid;
+    justify-content: center;
+    padding-bottom: 13vw;
 }
 
 .info{
     color: white;
     font-family: 'Gotham Black', sans-serif;
-    font-size:27px;
-    margin:20px 0px 25px 220px;
+    font-size:clamp(5px, 1.5vw, 2vmax);
+    text-align: left;
+    margin-top:5%;
+    margin-left:2vw;
 }
 
 .link{
     color: white;
     font-family: 'Gotham Light', sans-serif;
-    font-size:27px;
+    font-size:clamp(5px, 1.6vw, 2vmax);
     text-decoration: none;
     transition: 0.5s;
-    z-index: 1;
 }
 
 .link:hover{
     color: #69ffff;
 }
 
-.art1, .art2, .art3, .art4, .art5, .art6 {
-    position:fixed;
-    justify-self: right;
-    padding: 5% 4% 3% 5%;
-     width:90%;
-     height:80%;
-     object-fit:contain;
-}
-
-iframe{
-    padding:170px 0px 0px 100px;
-    width: 1700px;
-    height: 700px;
-}
-
-/*Desktop response*/
-
-
-@media(max-width: 1366px){
-
-    #part1{
-        background-size:cover;
-        background-repeat: no-repeat;
-        width:1343px;
-        height:600px;
-      }
+/* Smartphones, Android phones, landscape ihone*/
+@media (max-width: 560px) {
+    
+    #divider2{
+        margin: 113% 0px 0px 0px;
+        width:100%;
+    }
 
     #part2{
-        background-size:cover;
-        background-repeat: no-repeat;
-        width:1343px;
-        height: 1000px;
-      }
-      
-    #part3{
-        background-size:cover;
-        background-repeat: no-repeat;
-        width:1343px;
-        height: 780px;
-      }
-
-      #divider1{
-        width:1346px;
-        padding-top:566px;
-      }
-
-      #divider2{
-        width:1346px;
-        padding-top:1580px;
-      }
-
-      .options{
-        height: 450px;
-        width:  400px;
-    }
-      
-    #works{
-      display:grid;
-     grid-template-columns: repeat(3,400px);
-     grid-gap:30px;
-     padding: 70px 0px 100px 0px;
-     transition:0.5s;
+        margin-top:-5%;
+        height:320%;
     }
 
-     .withLine{
-        font-size: 20px;
-    }
-
-    .line{
-        padding:0px 20px 0px 20px;
-        font-size: 22px;
-    }
+   #part3 {
+    background-image: url(../Backgrounds/Footer_Mobile.png);
+    background-size:cover;
+    width: 100%;
+    height:150%;
+   }
 
     .headers{
-        font-size:45px;
-        text-align: center;
-        padding: 140px 0px 30px 0px;
-        letter-spacing: 30px;
-    }
-    
-    .headers2{
-        font-size:35px;
-        padding: 100px 0px 0px 0px;
+        padding: 15% 0px 0% 0px;
+        font-size:clamp(10px, 6vw, 60px);
+        letter-spacing: clamp(5px, 3vw, 2vmax);
     }
 
-    #footer{
-        margin:180px 400px 0px 435px ;
+    .headers1{
+        padding: 140% 0px 0% 0px;
+        font-size:clamp(10px, 6vw, 60px);
+        letter-spacing: clamp(5px, 3.5vw, 2vmax);
     }
-    
-    .info {
-        color: white;
-        font-family: 'Gotham Black', sans-serif;
-        font-size:20px;
-        margin:20px 0px 25px 60px;
-    }
-    
-    video{
-        object-fit: cover;
-        width:1343px;
-    }  
-    
+
     iframe{
-    padding:150px 0px 0px 30px;
-    width: 1280px;
-    height: 720px;
-}
+        padding:80% 0% 0% 6.5%;
+        height:15%;
+        width:87%;
+    }
+
+   .floats{
+   justify-self: center;
+   margin:5% 0vw 0px 0px;
+   z-index:4;
+   }
+
+   #works {
+    grid-template-rows: repeat(3,35%);
+    grid-template-columns: repeat(1,75%);
+    padding-top:8% 
+   }
+
+   #art {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    }
+
+    .info{
+        margin-top:7%;
+        font-size:clamp(2px, 3vw, 3vmax);
+    }
+    
     .link{
-        font-size:20px;
-    }
-    
-}
-
-
- /*Tablet response*/
-@media (max-width: 768px) {
-
-   .headers{
-    font-size: 25px;
-    padding:180px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-    
-
-   .headers2{
-    font-size: 25px;
-    padding:90px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-   
-   #part1{
-    width: 746px;
-    height: 330px;
-    object-fit:contain;
-   }
-
-   video{
-    width:746px;
-   }
-
-   #part3{
-    width: 746px;
-    height:400px;
-    object-fit:contain;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-   
-   #divider1{
-    width:746px;
-   padding-top: 308px;
-   }
-
-   #divider2{
-    width:746px;
-    padding-top:800px;
-   }
-   
-   iframe{
-    padding:70px 0px 0px 50px;
-    width: 650px;
-    height: 360px;
-   }
-   #part2{
-    width:746px;
-    height:480px;
-    object-fit:contain;
-   }
-  
-   #footer{
-    margin:50px 50px 0px 65px ;
-   }
-
-   .info{
-    font-size:13px;
-    margin:15px 0px 10px 200px;
-   }
-
-   .link{
-    font-size:13px;
-   }
-}
-
-
-
-@media (max-width: 500px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-    #part1{
-        width: 480px;
-        height:215px;
+        font-size:clamp(2px, 3vw, 3vmax);
     }
 
-    iframe{
-        padding:90px 0px 0px 48px;
-        width: 380px;
-        height: 300px;
+    .line, .withLine{
+        font-size:clamp(3px, 4vw, 4vmax);
     }
-
-   #part2 {
-    width:480px;
-    height:420px;
-    object-fit: cover;
-   }
-
-   #part3 {
-    background-image: url('../Backgrounds/Footer_mobile.png');
-    width: 480px;
-    height:880px;
-    object-fit: contain;
-   }
-
-   #divider1{
-    width:480px;
-    height:40px;
-    object-fit: contain;
-    margin-top:-110px;
-   }
-
-   #divider2{
-    width:480px;
-    height:50px;
-    object-fit: cover;
-    padding-top: 600px;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-   
-
-   .headers2{
-    font-size: 25px;
-    padding:320px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-
-   .headers{
-    font-size: 25px;
-    padding:750px 0px 0px 0px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 66px;
-   }
-
-   #footer{
-    margin:60px 50px 0px 65px ;
-   }
-
-   video{
-    width: 480px;
-   }
- }
-
- @media (max-width: 415px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width:415px;
-    height:200px;
-   }
-
-   #part2 {
-    width:415px;
-    height:720px;
-   }
-
-   #part3 {
-    width:415px;
-    height:720px;
-   }
-
-   video{
-    width: 415px;
-    height:200px;
-   }
-
-   #divider1{
-    width:415px;
-    height:45px;
-    object-fit: contain;
-    margin-top:-130px;
-   }
-
-   #divider2{
-    width:415px;
-    height:45px;
-    object-fit: cover;
-    margin-top:300px;
-   }
-
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #works {
-    grid-template-rows: repeat(3,270px);
-    grid-template-columns: repeat(1,355px);
-    padding:50px 0px 0px 5px;
-   }
-
-   #art {
-    display:grid;
-    grid-template-columns: repeat(2,165px);
-    }
-
-   .sets {
-    text-align:left;
-    font-size:25px;
-    padding:90px 100px 0px 60px
-   }
-
-   .headers{
-    font-size: 25px;
-    text-align:center;
-    padding-left:10px;
-    letter-spacing: 15px;
-   }
-
-   .headers1{
-    font-size: 25px;
-    text-align:center;
-    padding-top:1000px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 20px;
-   }
- 
-   iframe{
-    padding:130px 0px 0px 0px;
-    width: 320px;
-    height: 240px;
-}
-   #footer{
-    margin-top:-45px;
-   }
-}
-
- @media (max-width: 395px) {
-    /* Smartphones, Android phones, landscape ihone */
-
-   #part1{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width:395px;
-    height:200px;
-   }
-
-   #part2 {
-    width:395px;
-    height:900px;
-   }
-
-   #part3 {
-    width:395px;
-    height:720px;
-   }
-
-   video{
-    width: 395px;
-    height:200px;
-   }
-
-   #divider1{
-    width:395px;
-    height:45px;
-    object-fit: contain;
-    margin-top:-130px;
-   }
-
-   #divider2{
-    width:395px;
-    height:45px;
-    object-fit: cover;
-    margin-top:-40px;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #works {
-    grid-template-rows: repeat(3,270px);
-    grid-template-columns: repeat(1,355px);
-    padding:50px 0px 0px 5px;
-   }
-
-   #art {
-    display:grid;
-    grid-template-columns: repeat(2,165px);
-    }
-
-   .sets {
-    text-align:left;
-    font-size:25px;
-    padding:90px 100px 0px 60px
-   }
-
-   .headers{
-    font-size: 25px;
-    text-align:center;
-    padding-left:10px;
-    letter-spacing: 15px;
-   }
-
-   .headers1{
-    font-size: 25px;
-    text-align:center;
-    padding-top:1000px;
-    letter-spacing: 15px;
-   }
-
-   .info{
-    margin:15px 0px 10px 20px;
-   }
- 
-   iframe{
-    padding:83px 30px 0px 30px;
-    width: 330px;
-    height: 200px;
-}
-   #footer{
-    margin-top:-45px;
-   }
-}
-
-@media (max-height: 395px) and (orientation: landscape) {
-
-   #part1{
-    background-size:contain;
-    background-repeat: no-repeat;
-    width:800px;
-    height:430px;
-   }
-
-   #part2 {
-    width:800px;
-    height:520px;
-   }
-
-   #part3 {
-    background-size:contain;
-    width:800px;
-    height:453px
-  
-   }
-
-   #divider1{
-    width:800px;
-    height:45px;
-    object-fit: cover;
-    margin-top:410px;
-   }
-
-   #divider2{
-    width:800px;
-    height:45px;
-    object-fit: cover;
-    margin-top:75px;
-   }
-
-   .withLine{
-    font-size: 15px;
-   }
-
-   .line {
-    font-size: 15px;
-    padding:0px 10px 0px 10px;
-   }
-
-   .options{
-    height: 250px;
-    width:  200px;
-   }
-
-   #works {
-    grid-template-rows: 1;
-    grid-template-columns: repeat(3,230px);
-    padding:20px 0px 0px 40px;
-   }
-
-   #art {
-    display:grid;
-    grid-template-columns: 1;
-    }
-
-   .sets {
-    text-align:left;
-    font-size:15px;
-    padding:20px 0px 0px 40px
-   }
-
-   .headers{
-    font-size: 25px;
-    text-align:center;
-    padding-top:70px;
-    letter-spacing: 15px;
-   }
-
-   .headers1{
-    letter-spacing: 15px;
-    font-size: 25px;
-    padding: 50px 0px 0px 20px;
-    padding-bottom:0px;
-    padding-top:50px;
-
-   }
-   .info{
-    font-size: 13px;
-    margin:15px 0px 10px 270px;
-   }
-
-   .link{
-    font-size: 13px;
-   }
-   
-   #footer{
-    margin:90px 20px 0px 20px;
-   }
 }
