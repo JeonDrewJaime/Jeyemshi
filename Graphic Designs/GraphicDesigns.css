@@ -269,13 +269,14 @@ body{
    .headers{
     text-align: center;
     padding:165% 0% 30% 2%;
-    font-size:clamp(7px, 4.5vw, 60px);
+    font-size:clamp(7px, 6vw, 60px);
     letter-spacing: clamp(5px, 3vw, 2vmax);
 }
 
    #part2 {
     background-size: 100%;
     margin-top: -20%;
+    z-index:2;
     width:100%;
     height:108%;
    }
@@ -293,13 +294,12 @@ body{
    #part3 {
     background-image: url('../Backgrounds/Footer_mobile.png');
     background-size:cover;
-    z-index:1;
     width: 100%;
     height:150%;
    }
 
    #divider2{
-    margin-top:180%;
+    margin-top:186%;
    }
    
    #works {
