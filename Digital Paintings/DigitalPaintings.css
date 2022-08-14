@@ -293,7 +293,7 @@ body{
     }
 
    #part3 {
-    background-image: url('../Backgrounds/Footer_mobile.png');
+    background-image: url('../Backgrounds/Footer_mobile.webp');
     background-size:cover;
     z-index:1;
     width: 100%;
