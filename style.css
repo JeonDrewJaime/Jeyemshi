@@ -66,7 +66,7 @@ body{
 }
 
 #part1{
-  background-image: url('./Backgrounds/Jeyemshi_banner_LGBT.png');
+  background-image: url('./Backgrounds/Jeyemshi_banner_LGBT.webp');
   background-size:100%;
   background-repeat: no-repeat;
   width:100%;
@@ -100,7 +100,7 @@ body{
 }
 
 #part2{
-    background-image: url('./Backgrounds/Portfolios_BG.png');
+    background-image: url('./Backgrounds/Portfolios_BG.webp');
     background-size:cover;
     margin-top:-3%;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ body{
     font-size:clamp(15px, 3vw, 3vmax);
     position:relative;
     text-align: center;
-    padding: 7vw 0px 1vw 1.5vw;
+    padding: 19vw 0px 1vw 1.5vw;
     letter-spacing: clamp(2px, 2vw, 2vmax);
 }
 
@@ -171,21 +171,20 @@ body{
     position:relative;
 }
 
-#part3{
-    background-image: url('./Backgrounds/Footer.png');
+#part3 {
+    background-image: url('./Backgrounds/Footer.webp');
     background-repeat: no-repeat;
     margin-top: -4%;
-    padding-top:5%;
     background-size: 100%;
     width:100%;
-    height:100%;
+    height:120%;
 }
 
 #footer{
     justify-self: center;
     display:grid;
     justify-content: center;
-    padding-bottom: 13vw;
+    margin-bottom: 10vw;
 }
 
 .info{
@@ -213,7 +212,7 @@ body{
 @media (max-width: 560px) {
 
    #part1 {
-    background-image: url(./Backgrounds/mobile_banner.png);
+    background-image: url('./Backgrounds/mobile_banner.webp');
     background-repeat: no-repeat;
     z-index:3;
    }
@@ -225,7 +224,7 @@ body{
    }
 
    #part3 {
-    background-image: url(./Backgrounds/Footer_Mobile.png);
+    background-image: url('./Backgrounds/Footer_Mobile.webp');
     background-size:cover;
     z-index:1;
     width: 100%;
@@ -239,7 +238,7 @@ body{
     }
 
     .headers1{
-        padding: 140% 0px 0% 0px;
+        padding: 120% 0px 0% 0px;
         font-size:clamp(10px, 6vw, 60px);
         letter-spacing: clamp(5px, 3.5vw, 2vmax);
     }

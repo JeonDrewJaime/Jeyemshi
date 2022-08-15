@@ -58,7 +58,7 @@ body{
 }
 
 #part1 {
-  background-image: url('../Backgrounds/Neon_darker.png');
+  background-image: url('../Backgrounds/Neon_darker.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -133,7 +133,7 @@ body{
     font-size:clamp(15px, 3vw, 3vmax);
     position:relative;
     text-align: center;
-    padding: 17vw 0px 1vw 1.5vw;
+    padding: 19vw 0px 1vw 1.5vw;
     letter-spacing: clamp(2px, 2vw, 2vmax);
 }
 
@@ -170,20 +170,19 @@ body{
 }
 
 #part3{
-    background-image: url('../Backgrounds/Footer.png');
+    background-image: url('../Backgrounds/Footer.webp');
     background-repeat: no-repeat;
     margin-top: -5%;
-    padding-top:5%;
     background-size: 100%;
     width:100%;
-    height:100%;
+    height:120%;
 }
 
 #footer{
     justify-self: center;
     display:grid;
     justify-content: center;
-    padding-bottom: 13vw;
+    padding-bottom: 10vw;
 }
 
 .info{
@@ -263,7 +262,7 @@ body{
         }
 
    #part1{
-    background-image: url('../Backgrounds/neon_mobile.png');
+    background-image: url('../Backgrounds/neon_mobile.webp');
     background-size: 100%;
     margin-top: -8%;
     }
