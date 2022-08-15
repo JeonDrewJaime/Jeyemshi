@@ -94,7 +94,7 @@ body{
     width:100%;
     position:relative;
     object-fit: contain;
-    z-index:2;
+    z-index:3;
 }
 
 .floats{
