@@ -197,7 +197,7 @@ iframe{
     }
 
    #part3 {
-    background-image: url('../Backgrounds/Footer_Mobile.webp')  , url('http://drive.google.com/uc?export=view&id=13M--zIyCGGvI91XwxF8YvZAt8P-dxLLy');
+    background-image: url('../Backgrounds/Footer_Mobile.webp') , url('http://drive.google.com/uc?export=view&id=13M--zIyCGGvI91XwxF8YvZAt8P-dxLLy');
     background-size:cover;
     width: 100%;
     height:150%;
