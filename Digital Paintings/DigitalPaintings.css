@@ -58,7 +58,7 @@ body{
 }
 
 #part1 {
-  background-image: url('../Backgrounds/Neon_darker.webp'), url('http://drive.google.com/uc?export=view&id=1LC4hc9BBr2Kr6shjHCpBr_l0d-WpBuKb');
+  background-image: url('https://i.ibb.co/GFNS0r5/Neon-darker.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@ body{
 }
 
 #part3{
-    background-image: url('../Backgrounds/Footer.webp') , url('http://drive.google.com/uc?export=view&id=1fp2IEhVT9g6M1CFamJ2-MmsX8cmMvDdC');
+    background-image: url('https://i.ibb.co/9tHRM6w/Footer.webp');
     background-repeat: no-repeat;
     margin-top: -5%;
     background-size: 100%;
@@ -262,7 +262,7 @@ body{
         }
 
    #part1{
-    background-image: url('../Backgrounds/neon_mobile.webp') , url('http://drive.google.com/uc?export=view&id=1ghsc-6yw5X-xB9m0ZslrCOzOXoWd640W');
+    background-image: url('https://i.ibb.co/KKjbNjr/neon-mobile.webp');
     background-size: 100%;
     margin-top: -8%;
     }
@@ -292,7 +292,7 @@ body{
     }
 
    #part3 {
-    background-image: url('../Backgrounds/Footer_mobile.webp') , url('http://drive.google.com/uc?export=view&id=13M--zIyCGGvI91XwxF8YvZAt8P-dxLLy');
+    background-image: url('https://i.ibb.co/Xs4Nfgh/Footer-Mobile.webp');
     background-size:cover;
     z-index:1;
     width: 100%;

@@ -106,7 +106,7 @@ video{
 }
 
 #part2 {
-    background-image: url('../Backgrounds/Portfolios_BG.webp') , url('http://drive.google.com/uc?export=view&id=17uRad9HbIiHktmL8Gg_i4UHgiJ94sIza');
+    background-image: url('https://i.ibb.co/7Khhdsf/Portfolios-BG.webp');
     background-size:cover;
     margin-top:-5%;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ iframe{
 }
 
 #part3 {
-    background-image: url('../Backgrounds/Footer.webp')  , url('http://drive.google.com/uc?export=view&id=1fp2IEhVT9g6M1CFamJ2-MmsX8cmMvDdC');
+    background-image: url('https://i.ibb.co/9tHRM6w/Footer.webp');
     background-repeat: no-repeat;
     margin-top: -4%;
     background-size: 100%;
@@ -197,7 +197,7 @@ iframe{
     }
 
    #part3 {
-    background-image: url('../Backgrounds/Footer_Mobile.webp') , url('http://drive.google.com/uc?export=view&id=13M--zIyCGGvI91XwxF8YvZAt8P-dxLLy');
+    background-image: url('https://i.ibb.co/Xs4Nfgh/Footer-Mobile.webp');
     background-size:cover;
     width: 100%;
     height:150%;
